@@ -3,9 +3,19 @@ import Style from '../public/css/MainHome.module.css'
 function MainHome() {
   return (
     <div className={Style.mainContainer}>
+       <div className={Style.plane}>
+            <img src='image/banner-plane.svg'></img>
+          </div>
+          
         <div className="container">
+          <div className={Style.icon}>
+            <img src='image/cloud1.svg'></img>
+          </div>
+          <div className={Style.icon1}>
+            <img src='image/cloud2.svg'></img>
+          </div>
             <div className="row">
-                <div className="col-md-3 p-5 mt-10">
+                <div className={`col-md-3 p-5 mt-10 ${Style.leftImage}`}>
                     <img src='image/banner-image1.png'></img>
                 </div>
                 <div className={`col-md-5 ${Style.mid}`}>
