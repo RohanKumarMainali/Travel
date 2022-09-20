@@ -1,0 +1,29 @@
+.select {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    position: relative;
+    padding: 15px 25px;
+    width: 200px;
+    background: #000;
+}
+.button::before {
+    content: 'ss';
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    border: 2px solid #6f9a37;
+}
+
+.button:hover::before {
+    content: '';
+    color: rgb(245, 245, 245);
+    transform: scale(10);
+}
