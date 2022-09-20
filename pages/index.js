@@ -7,6 +7,7 @@ import IndexHome from '../Components/IndexHome'
 import Collection from '../Components/Collection'
 
 import PopularPackages from '../Components/PopularPackages'
+import Feature from '../Components/Feature'
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-      <IndexHome/>
+      <IndexHome />
+      <PopularPackages />
       <Collection />
-      <PopularPackages/>
+      <Feature />
     </div>
   )
 }

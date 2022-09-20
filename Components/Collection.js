@@ -3,7 +3,7 @@ import Style from "../public/css/collection.module.css"
 const Collection = () => {
     return (
         <div className='container my-5'>
-            <div className="texts d-flex my-5 justify-content-center align-items-center">
+            <div className="texts d-flex py-5 justify-content-center align-items-center">
                 <span className={Style.span1}>13</span>
                 <div className="content mx-3" style={{width:'45%'}}>
                     <h1>Attractive Inner Pages

@@ -1,0 +1,19 @@
+.main:hover .divICON {
+    background: #90b956;
+    transition: .2s ease-in-out;
+    color: #fff;
+}
+
+.icon{
+    color: #90b956;
+    font-size: 40px;
+}
+.main:hover .divICON .icon {
+    color: #fff;
+  
+}
+
+
+.content p {
+    font-weight: normal;
+}
