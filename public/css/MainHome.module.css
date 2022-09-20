@@ -1,5 +1,6 @@
 .mainContainer{
     margin-top: 10%;
+    position: relative;
 }
 
 .mainContainer img{
@@ -95,4 +96,90 @@
     transform: scale(1);
     border-radius: 0;
     opacity: 1;
+}
+
+.mid h1::after{
+    content: url('../image/banner-dot-vector.26600116.svg');
+    position: absolute;
+    right: -16px;
+    top: -7px;
+}
+
+.mid span::after{
+    content: url('../image/fly-shape1.d203ed55.svg');
+    position: absolute;
+    right: -80px;
+    top: 8px;
+}
+
+.icon{
+    position: absolute;
+    left: 15%;
+    opacity: .5;
+}
+
+.icon1{
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    opacity: .5;
+
+}
+
+.plane{
+    position: absolute;
+    opacity: .9;
+    animation: cloud 20s linear 0s infinite reverse;
+    z-index: 9;
+    top: -10%;
+}
+.plane img{
+    min-width: 65px;
+    max-width: 65px;
+    opacity: .6;
+
+}
+@keyframes cloud {
+    0%{
+        transform: scale(1);
+        right: 0%;
+    }
+    50%{
+        right: 50%;
+    }
+    100%{
+        right: 110%;
+    }
+  }
+
+  .leftImage{
+
+    position: relative;
+  }
+  .leftImage img{
+    width: 70%;
+    position: absolute;
+    animation: jumping 10s linear infinite alternate;
+
+  }
+
+@keyframes jumping {
+    0%{
+        margin-top: 0px;
+    }
+    
+    40%{
+        margin-top: 50px;
+    }
+   
+
+    50%{
+        margin-top: 60px;
+    }
+    60%{
+        margin-top: 70px;
+    }
+    100%{
+        margin-top: 0px;
+    }
 }
