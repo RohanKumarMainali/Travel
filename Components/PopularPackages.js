@@ -13,58 +13,80 @@ function PopularPackages() {
       </div>
       <div className="container-fluid">
         <div className="row d-flex flex-wrap">
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-center.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-center.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
             <button className={Style.viewButton}>View</button>
           </div>
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-left1.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-left1.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
+
             <button className={Style.viewButton}>View</button>
           </div>
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-left2.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-left2.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
+
             <button className={Style.viewButton}>View</button>
           </div>
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-right1.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-right1.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
+
             <button className={Style.viewButton}>View</button>
           </div>
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-right2.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-right2.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
+
             <button className={Style.viewButton}>View</button>
           </div>
-          <div className="col-md-4 px-4 mb-5">
-            <img
-              style={{ width: '100%' }}
-              className="banner-img1 img-thumbnail"
-              src="/image/banner-left1.png"
-              alt=""
-            />
+          <div className={`col-md-4 px-4 mb-5 ${Style.package}`}>
+            <div className={Style.imgContainer}>
+              <img
+                style={{ width: '100%' }}
+                className="banner-img1 img-thumbnail"
+                src="/image/banner-left1.png"
+                alt=""
+              />
+              <div className={Style.overlay}></div>
+            </div>
             <button className={Style.viewButton}>View</button>
           </div>
         </div>
