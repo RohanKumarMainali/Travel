@@ -1,0 +1,24 @@
+.viewButton{
+   background-color: rgba(144,185,86,.15);;
+    font-family: var(--font-dosis);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--title-color);
+    padding: 20px 30px;
+    display: block;
+    text-align: center;
+    transition: .35s;
+    width: 100%;
+    color: black;
+    border: none;
+}
+
+.viewButton:hover{
+    background-color: #82b440;
+    color: white;
+}
+
+.mainContainer img{
+    height: 80%;
+}

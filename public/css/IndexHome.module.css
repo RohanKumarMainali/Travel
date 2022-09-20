@@ -44,7 +44,7 @@
 .leftContainer::after{
     content: '';
     position: absolute;
-    right: 82px;
+    right: 90px;
     bottom: 0;
     top: 0;
     background-color: white;
@@ -59,8 +59,8 @@
 .leftContainer h1{
     font-family: var(--font-dosis);
     font-weight: 700;
-    font-size: 50px;
-    line-height: 85px;
+    font-size: 40px;
+    line-height: 70px;
     text-transform: capitalize;
     color: var(--title-color);
     margin-bottom: 40px;
