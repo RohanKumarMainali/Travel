@@ -1,7 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Helvetica Neue';
 }
 
 a {
@@ -23,6 +25,7 @@ a {
     background: white;
   }
 }
+
 
 /* .swiper {
   width: 100%;
@@ -55,3 +58,8 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+.container-fluid{
+  padding: 0 !important;
+}
+

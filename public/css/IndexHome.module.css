@@ -33,6 +33,7 @@
 
 
 .leftContainer{
+    padding-top: 10%;
     align-items: center;
     z-index: 1;
     position: relative;
@@ -43,7 +44,7 @@
 .leftContainer::after{
     content: '';
     position: absolute;
-    right: 82px;
+    right: 90px;
     bottom: 0;
     top: 0;
     background-color: white;
@@ -53,5 +54,16 @@
     height: 101%;
     transform: skewX(-15deg);
     z-index: -1;
-    
 }
+
+.leftContainer h1{
+    font-family: var(--font-dosis);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+

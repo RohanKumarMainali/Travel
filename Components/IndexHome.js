@@ -3,7 +3,7 @@ import Style from '../public/css/IndexHome.module.css'
 
 function IndexHome() {
   return (
-    <div className={`${Style.container} container`}>
+    <div className={`${Style.container} container-fluid`}>
       <div className={`row ${Style.row}`}>
         <div
           className={`col-md-5 ${Style.leftContainer}`}
