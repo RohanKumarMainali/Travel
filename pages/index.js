@@ -18,8 +18,9 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <IndexHome/>
-      <Collection />
+    
       <PopularPackages/>
+      <Collection />
     </div>
   )
 }
