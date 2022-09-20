@@ -21,7 +21,9 @@ function PopularPackages() {
                 src="/image/banner-center.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
             <button className={Style.viewButton}>View</button>
           </div>
@@ -33,7 +35,9 @@ function PopularPackages() {
                 src="/image/banner-left1.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
 
             <button className={Style.viewButton}>View</button>
@@ -46,7 +50,9 @@ function PopularPackages() {
                 src="/image/banner-left2.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
 
             <button className={Style.viewButton}>View</button>
@@ -59,7 +65,9 @@ function PopularPackages() {
                 src="/image/banner-right1.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
 
             <button className={Style.viewButton}>View</button>
@@ -72,7 +80,9 @@ function PopularPackages() {
                 src="/image/banner-right2.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
 
             <button className={Style.viewButton}>View</button>
@@ -85,7 +95,9 @@ function PopularPackages() {
                 src="/image/banner-left1.png"
                 alt=""
               />
-              <div className={Style.overlay}></div>
+              <div className={Style.overlay}>
+                <h3>Package Name</h3>
+              </div>
             </div>
             <button className={Style.viewButton}>View</button>
           </div>
