@@ -1,6 +1,43 @@
-.select {
-    outline: none;
-    border: none;
+.mainContainer{
+    margin-top: 10%;
+}
+
+.mainContainer img{
+    width: 100%;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mid span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #82b440;
+    display: inline-block;
+    margin-bottom: 8px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mid h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.mid p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-bottom: 46px;
 }
 
 .discoverButton{

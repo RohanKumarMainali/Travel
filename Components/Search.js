@@ -17,7 +17,7 @@ const Search = () => {
                 </div>
                 <div className="col-md-3  my-4 col-12 d-flex justify-content-center align-items-center">
                     <GoLocation />
-                    <select style={{ outline: 'none', border: "none" }}  className={`form-select bg-light mx-2 ${Style.select}`} aria-label="Default select example">
+                    <select style={{ outline: 'none', border: "none" }} className={`form-select bg-light mx-2 ${Style.select}`} aria-label="Default select example">
                         <option selected>Open this select menu</option>
                         <option value={1}>One</option>
                         <option value={2}>Two</option>
@@ -27,7 +27,7 @@ const Search = () => {
                 </div>
                 <div className="col-md-3  my-4 col-12 d-flex justify-content-center align-items-center">
                     <GoLocation />
-                    <select style={{ outline: 'none', border: "none" }}  className={`form-select bg-light mx-2 ${Style.select}`} aria-label="Default select example">
+                    <select style={{ outline: 'none', border: "none" }} className={`form-select bg-light mx-2 ${Style.select}`} aria-label="Default select example">
                         <option selected>Open this select menu</option>
                         <option value={1}>One</option>
                         <option value={2}>Two</option>
@@ -37,7 +37,9 @@ const Search = () => {
                 </div>
                 <div className="col-md-3  my-4 col-12 d-flex justify-content-center align-items-center">
                     <div className={Style.btn}>
-                    <button style={{background:'#6f9a37' , border:'none'}} className={` text-light  ${Style.button}`}>Find More</button>
+                        <div className={Style.discoverButton}>
+                            <a><label>Discover More</label></a>
+                        </div>
                     </div>
                 </div>
             </div>
