@@ -1,0 +1,98 @@
+.mainContainer{
+    margin-top: 10%;
+}
+
+.mainContainer img{
+    width: 100%;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.mid span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #82b440;
+    display: inline-block;
+    margin-bottom: 8px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mid h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.mid p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-bottom: 46px;
+}
+
+.discoverButton{
+    position: relative;
+    z-index: 9;
+    display: inline-block;
+}
+
+.discoverButton a{
+    background: #82b440 ;
+    color: white;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    border: 2px solid #82b440;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 12px 35px;
+    cursor: pointer;
+}
+.discoverButton label{
+    color: white;
+    cursor: pointer;
+
+}
+.discoverButton:hover label{
+    color: #82b440;
+}
+
+.discoverButton a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+    transform: scale(.6);
+    border-radius: 0;
+    opacity: 0;
+
+}
+
+.discoverButton:hover a::after{
+    z-index: -1;
+    transform: scale(1);
+    border-radius: 0;
+    opacity: 1;
+}
