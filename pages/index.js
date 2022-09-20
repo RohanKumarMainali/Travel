@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../Components/Navbar'
 import IndexHome from '../Components/IndexHome'
+import PopularPackages from '../Components/PopularPackages'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,6 +15,7 @@ export default function Home() {
 
       <Navbar></Navbar>
       <IndexHome/>
+      <PopularPackages/>
 
     </div>
   )

@@ -1,7 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Helvetica Neue';
 }
 
 a {
@@ -22,4 +24,8 @@ a {
   body {
     background: white;
   }
+}
+
+.container-fluid{
+  padding: 0 !important;
 }
