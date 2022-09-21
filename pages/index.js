@@ -6,6 +6,8 @@ import Search from '../Components/Search'
 import Types from '../Components/Types'
 import Destination from '../Components/Destination'
 import Sticky from '../Components/Sticky'
+import PopularPackages from '../Components/PopularPackages'
+import BestPlans from '../Components/BestPlans'
 
 export default function Home() {
   return (
@@ -19,8 +21,9 @@ export default function Home() {
       <MainHome />
       <Search />
       <Types />
-      <Destination />
+      <PopularPackages></PopularPackages>
       <Sticky />
+      <BestPlans></BestPlans>
     </div>
   )
 }
