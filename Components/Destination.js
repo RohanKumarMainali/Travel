@@ -86,9 +86,9 @@ const Destination = () => {
         </div>
       </div>
       <div className={Style.btn}>
-      <div className={`bg-danger ${Style.discoverButton}`}>
-        <a><label>Discover More</label></a>
-      </div>
+        <div className={`bg-danger ${Style.discoverButton}`}>
+          <a><label>Discover More</label></a>
+        </div>
       </div>
     </div>
   )

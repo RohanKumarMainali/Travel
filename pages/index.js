@@ -6,6 +6,8 @@ import Search from '../Components/Search'
 import Types from '../Components/Types'
 import Destination from '../Components/Destination'
 import Sticky from '../Components/Sticky'
+import Package from '../Components/PopularPackages'
+import Ask from '../Components/Ask'
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
       <MainHome />
       <Search />
       <Types />
+      <Package />
       <Destination />
       <Sticky />
+      <Ask />
     </div>
   )
 }

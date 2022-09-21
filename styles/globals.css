@@ -357,3 +357,24 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.asking-form-wrap {
+  background: #fff7f5;
+  padding: 45px 40px;
+  margin-top: -100px;
+}
+form.style-1 .form-inner input, form.style-1 .form-inner textarea {
+  border: 1px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  background-color: #fff7f5;
+  padding: 0 20px;
+  transition: all .4s ease;
+}
+form.style-1 .form-inner input:focus, form.style-1 .form-inner textarea:focus{
+  outline: none !important;
+  border:1px solid #82b440;
+}
+

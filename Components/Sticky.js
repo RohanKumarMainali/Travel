@@ -3,10 +3,10 @@ import { BsFillPlayCircleFill } from 'react-icons/bs';
 import Style from '../public/css/sticky.module.css'
 const Sticky = () => {
     return (
-        
-        <div className={`mt-120 p-0 ${Style.sectionVideo}`}>
-            <div className="container">
-                <div className="row justify-content-center align-items-center g-4">
+
+        <div className={`my-5 ${Style.sectionVideo} py-5`}>
+            <div className="container py-5">
+                <div className="row justify-content-center align-items-center py-5 g-4">
                     <div className="col-lg-7 col-md-10">
                         <div className={Style.videosectioncontent}>
                             <span>Feel The Vibe</span>
@@ -18,9 +18,9 @@ const Sticky = () => {
                                 ad minim. Exercitation ullam laboris nisi ut aliquip ex ea commodo
                                 consequat.
                             </p>
-                            <a className="eg-btn btn--primary btn--lg" href="/destination">
-                                Discover More
-                            </a>
+                                <div className='discoverButton'>
+                                    <a><label>Discover More</label></a>
+                                </div>
                         </div>
                     </div>
                     <div className="col-lg-5 col-md-10 d-flex justify-content-lg-end justify-content-center">

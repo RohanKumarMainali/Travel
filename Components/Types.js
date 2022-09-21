@@ -20,7 +20,7 @@ const Types = () => {
                         <h4 className='text-center'>Adventure</h4>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     )
