@@ -1,12 +1,14 @@
 @import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;500&display=swap");
-html{
-	overflow-x: hidden;
+
+html {
+  overflow-x: hidden;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -26,12 +28,13 @@ a {
     padding: 0;
     color-scheme: dark;
   }
+
   body {
     background: white;
   }
 }
 
-.container-fluid{
+.container-fluid {
   padding: 0 !important;
 }
 
