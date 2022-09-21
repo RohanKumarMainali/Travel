@@ -6,10 +6,12 @@ import Search from '../Components/Search'
 import Types from '../Components/Types'
 import Destination from '../Components/Destination'
 import Sticky from '../Components/Sticky'
-import Package from '../Components/PopularPackages'
+import PopularPackages from '../Components/PopularPackages'
+import BestPlans from '../Components/BestPlans'
 import Ask from '../Components/Ask'
 import Success from '../Components/Success'
 import Testimonial from '../Components/Testimonial'
+import Blog from '../Components/Blog'
 
 export default function Home() {
   return (
@@ -23,12 +25,14 @@ export default function Home() {
       <MainHome />
       <Search />
       <Types />
-      <Package />
-      <Destination />
+      <PopularPackages></PopularPackages>
+      <Destination></Destination>
       <Sticky />
       <Ask />
+      <BestPlans></BestPlans>
       <Success />
       <Testimonial />
+      <Blog></Blog>
     </div>
   )
 }

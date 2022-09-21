@@ -1,0 +1,72 @@
+.viewButton{
+    background-color: rgba(144,185,86,.15);;
+     font-family: var(--font-dosis);
+     font-weight: 700;
+     font-size: 24px;
+     text-transform: capitalize;
+     color: var(--title-color);
+     padding: 20px 30px;
+     display: block;
+     text-align: center;
+     transition: .35s;
+     width: 100%;
+     color: black;
+     border: none;
+ }
+ 
+ .viewButton:hover{
+     background-color: #82b440;
+     color: white;
+ }
+ 
+ .mainContainer img{
+     cursor: pointer;
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+ .imgContainer{
+     position: relative;
+     height: 50%;
+     width: auto;
+     overflow: hidden;
+ }
+ 
+ .imgContainer:hover .overlay{
+     opacity: 0.8;
+     transform: scale(1);
+ }
+ 
+ .overlay{
+     cursor: pointer;
+     background-color: rgba(34,34,34,.8);
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     transform: scale(.4);
+     opacity: 0;
+     transition: .4s;
+     border-radius: 5px 5px 0px 0px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .overlay h3{
+     color: white;
+     text-align: center;
+     vertical-align: middle;
+     font-family: 'Helvetica Neue';
+ }
+ 
+ .overlay span{
+     font-size: 14px;
+ }
+ 
+ 
+ .package{
+     box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+     padding: 0;
+ }

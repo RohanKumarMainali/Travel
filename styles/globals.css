@@ -1,5 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;500&display=swap');
 
 html {
   overflow-x: hidden;
@@ -10,8 +10,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 
 a {
   color: inherit;
@@ -71,18 +69,17 @@ a {
   cursor: pointer;
 }
 
+
 .discoverButton label {
   color: white;
   cursor: pointer;
-
 }
-
 .discoverButton:hover label {
   color: #82b440;
 }
 
 .discoverButton a::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -91,12 +88,11 @@ a {
   background: white;
   width: 100%;
   height: 100%;
-  transition: .5s;
+  transition: 0.5s;
   z-index: -1;
-  transform: scale(.6);
+  transform: scale(0.6);
   border-radius: 0;
   opacity: 0;
-
 }
 
 .discoverButton:hover a::after {
@@ -123,19 +119,18 @@ a {
   height: 30px;
   line-height: 37px;
   opacity: 0;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
   cursor: pointer;
-
 }
 
 .bi-suit-heart-fill:before {
-  content: "\f59d";
+  content: '\f59d';
   color: red;
 }
 
 .bi:before,
-[class*=" bi-"]:before,
-[class^=bi-]:before {
+[class*=' bi-']:before,
+[class^='bi-']:before {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -155,7 +150,7 @@ a {
 
 .deal-image img {
   overflow: hidden;
-  transition: all .55s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
 .offer:hover .deal-image img {
@@ -173,6 +168,7 @@ a {
   margin: 0;
   padding: 0;
   gap: 10px;
+  display: flex;
 }
 
 .star-list li {
@@ -204,7 +200,7 @@ a {
 }
 
 .deal-image span.discount-bagde:after {
-  content: "off";
+  content: 'off';
   top: 3px;
   right: -17px;
   border-radius: 50%;
@@ -212,7 +208,7 @@ a {
   height: 35px;
   line-height: 35px;
   font-size: 14px;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 
 .deal-image span.discount-bagde:after {
@@ -229,17 +225,13 @@ a {
   color: white;
 }
 
-.star-list {
-  display: flex;
-}
-
 .deal-content .price span {
   font-size: 1.1rem;
   font-weight: 600;
   color: #5e5e5e;
   font-family: var(--font-work-sans);
   margin-right: 5px;
-  transition: all .55s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
 .offer:hover .deal-content .price span {
@@ -253,7 +245,7 @@ a {
   font-family: var(--font-work-sans);
 }
 
-.review-area>span {
+.review-area > span {
   font-size: 14px;
   font-weight: 500;
   color: #5e5e5e;
@@ -302,7 +294,6 @@ a {
 .discoverButtonReverse label {
   color: #82b440;
   cursor: pointer;
-
 }
 
 .discoverButtonReverse:hover label {
@@ -319,12 +310,11 @@ a {
   background: #82b440;
   width: 100%;
   height: 100%;
-  transition: .5s;
+  transition: 0.5s;
   z-index: -1;
-  transform: scale(.6);
+  transform: scale(0.6);
   border-radius: 0;
   opacity: 0;
-
 }
 
 .discoverButtonReverse:hover a::after {
@@ -371,6 +361,116 @@ a {
   margin-right: auto;
 }
 
+.best-plan-single1 {
+  width: 100%;
+  max-width: 415px;
+  border: 1px solid #eee;
+  transition: all 0.6s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.best-plan-single1 .content {
+  padding: 30px 25px 35px;
+}
+
+ .best-plan-single1 .content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #82b440;
+  margin-bottom: 5px;
+}
+
+.best-plan-single1 .content h4 a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  transition: all .5s ease;
+  line-height: 1.4;
+}
+
+.best-plan-single1 .conten h4:hover{
+  color: #82b440;
+}
+
+.best-plan-single1 .content .best-plan-meta span.duration {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.best-plan-single1 .content .best-plan-meta span.duration .bi {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #82b440;
+}
+
+.best-plan-single1 .content .best-plan-meta span.rating {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.best-plan-single1 .content .best-plan-meta span.rating .bi {
+  color: #82b440;
+  margin: 0 5px;
+}
+
+.best-plan-single1 .content .best-plan-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.best-plan-single1 .list-area {
+  margin-bottom: 25px;
+}
+
+.list-area h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.list-area ul.plan-list1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-area ul.plan-list1 li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  color:#5e5e5e ;
+  margin-bottom: 5px;
+}
+
+.list-area ul.plan-list1 li:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background: #5e5e5e;
+  border-radius: 30px;
+}
+
+.list-area ul.plan-list1 li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+}
+.best-plan-single1 .image {
+  position: relative;
+}
 .asking-form-wrap {
   background: #fff7f5;
   padding: 45px 40px;
