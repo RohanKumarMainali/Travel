@@ -5,36 +5,48 @@
     padding: 120px 0 220px;
     background-attachment: fixed;
     background-position: top;
-  }
-  .videosectioncontent span {
-    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.videosectioncontent span {
+    font-size: 1.2rem;
     font-weight: 400;
     color: white;
     display: inline-block;
     margin-bottom: 0;
     margin-right: 15px;
     text-transform: uppercase;
-  }
-  
-  .videosectioncontent h2 {
-    font-size: 4.2rem;
+}
+
+.videosectioncontent h2 {
+    font-size: 3.2rem;
     font-weight: 800;
     color: white;
     margin-bottom: 20px;
     line-height: 1.4;
-  }
-  
-  .videoplay {
+}
+.videosectioncontent p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.9;
+}
+
+.videoplay {
     text-align: center;
     z-index: 9;
     position: relative;
-  }
-  .videoplay {
+}
+
+.videoplay {
     text-align: center;
     z-index: 9;
     position: relative;
-  }
-  .videoplay .videoicon {
+}
+
+.videoplay .videoicon {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -46,8 +58,10 @@
     font-size: 30px;
     color: #90b956;
     background: white;
-  }
-  .videoplay .videoicon:after, .videoplay .videoicon:before {
+}
+
+.videoplay .videoicon:after,
+.videoplay .videoicon:before {
     content: "";
     display: block;
     position: absolute;
@@ -58,9 +72,9 @@
     border-radius: 50%;
     z-index: -1;
     transform: scale(1.4);
-  }
-  
-  .videowrapper span.watchvideo {
+}
+
+.videowrapper span.watchvideo {
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -71,4 +85,4 @@
     margin-right: 0;
     margin-top: 80px;
     white-space: nowrap;
-  }
+}

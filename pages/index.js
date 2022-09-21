@@ -8,6 +8,9 @@ import Destination from '../Components/Destination'
 import Sticky from '../Components/Sticky'
 import PopularPackages from '../Components/PopularPackages'
 import BestPlans from '../Components/BestPlans'
+import Ask from '../Components/Ask'
+import Success from '../Components/Success'
+import Blog from '../Components/Blog'
 
 export default function Home() {
   return (
@@ -22,8 +25,12 @@ export default function Home() {
       <Search />
       <Types />
       <PopularPackages></PopularPackages>
+      <Destination></Destination>
       <Sticky />
+      <Ask />
       <BestPlans></BestPlans>
+      <Success />
+      <Blog></Blog>
     </div>
   )
 }
