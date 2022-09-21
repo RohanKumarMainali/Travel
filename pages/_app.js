@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
 function MyApp({ Component, pageProps }) {
   return (
     <Head>

@@ -22,11 +22,14 @@
 .mainContainer img{
     cursor: pointer;
     height: 100%;
+    overflow: hidden;
 }
 
 .imgContainer{
     position: relative;
-    height: 80%;
+    height: 50%;
+    width: auto;
+    overflow: hidden;
 }
 
 .imgContainer:hover .overlay{
@@ -63,3 +66,7 @@
 }
 
 
+.package{
+    box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+    padding: 0;
+}
