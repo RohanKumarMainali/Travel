@@ -38,23 +38,23 @@ a {
   padding: 0 !important;
 }
 
-.deal-content{
+.deal-content {
   text-align: center;
   padding: 35px 25px;
 }
 
-.deal-content h1{
+.deal-content h1 {
   margin-bottom: 8px;
 }
 
-.discoverButton{
+.discoverButton {
   position: relative;
   z-index: 9;
   display: inline-block;
 }
 
-.discoverButton a{
-  background: #82b440 ;
+.discoverButton a {
+  background: #82b440;
   color: white;
   border-radius: 0;
   position: relative;
@@ -70,16 +70,18 @@ a {
   padding: 12px 35px;
   cursor: pointer;
 }
-.discoverButton label{
+
+.discoverButton label {
   color: white;
   cursor: pointer;
 
 }
-.discoverButton:hover label{
+
+.discoverButton:hover label {
   color: #82b440;
 }
 
-.discoverButton a::after{
+.discoverButton a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -97,22 +99,24 @@ a {
 
 }
 
-.discoverButton:hover a::after{
+.discoverButton:hover a::after {
   z-index: -1;
   transform: scale(1);
   border-radius: 0;
   opacity: 1;
 }
-.banner-img1{
+
+.banner-img1 {
   position: relative;
   overflow: hidden;
 }
-.favourite{
+
+.favourite {
   position: absolute;
   top: 25px;
   left: 25px;
   z-index: 1;
-  background:white;
+  background: white;
   border-radius: 50%;
   width: 30px;
   text-align: center;
@@ -129,11 +133,13 @@ a {
   color: red;
 }
 
-.bi:before, [class*=" bi-"]:before, [class^=bi-]:before {
+.bi:before,
+[class*=" bi-"]:before,
+[class^=bi-]:before {
   display: inline-block;
-  font-family: bootstrap-icons!important;
+  font-family: bootstrap-icons !important;
   font-style: normal;
-  font-weight: 400!important;
+  font-weight: 400 !important;
   font-feature-settings: normal;
   font-variant: normal;
   text-transform: none;
@@ -143,7 +149,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.offer:hover .favourite{
+.offer:hover .favourite {
   opacity: 1;
 }
 
@@ -152,11 +158,11 @@ a {
   transition: all .55s ease-in-out;
 }
 
-.offer:hover .deal-image img{
+.offer:hover .deal-image img {
   transform: scale(1.05);
 }
 
-.review-area{
+.review-area {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -168,11 +174,13 @@ a {
   padding: 0;
   gap: 10px;
 }
-.star-list li{
+
+.star-list li {
   color: #ffd91c;
 }
 
-.deal-image span.discount-bagde, .deal-single1 .deal-image span.discount-bagde:after {
+.deal-image span.discount-bagde,
+.deal-single1 .deal-image span.discount-bagde:after {
   position: absolute;
   background: white;
   font-weight: 500;
@@ -181,7 +189,7 @@ a {
   text-align: center;
 }
 
-.deal-image span.discount-bagde{
+.deal-image span.discount-bagde {
   bottom: 0;
   left: 50%;
   z-index: 1;
@@ -216,15 +224,16 @@ a {
   text-align: center;
 }
 
-.offer:hover .discount-bagde:after{
+.offer:hover .discount-bagde:after {
   background: #82b440;
   color: white;
 }
-.star-list{
+
+.star-list {
   display: flex;
 }
 
- .deal-content .price span {
+.deal-content .price span {
   font-size: 1.1rem;
   font-weight: 600;
   color: #5e5e5e;
@@ -232,7 +241,8 @@ a {
   margin-right: 5px;
   transition: all .55s ease-in-out;
 }
-.offer:hover .deal-content .price span{
+
+.offer:hover .deal-content .price span {
   color: #82b440;
 }
 
@@ -251,28 +261,29 @@ a {
   margin-left: 12px;
 }
 
-.review-area{
+.review-area {
   justify-content: center;
 }
 
-.banner-img1{
+.banner-img1 {
   padding: 0;
   border-radius: 0px;
 }
-.deal-content a{
+
+.deal-content a {
   color: black;
 }
 
 /*  discover button reverse style */
 
-.discoverButtonReverse{
+.discoverButtonReverse {
   position: relative;
   z-index: 9;
   display: inline-block;
 }
 
-.discoverButtonReverse a{
-  background: white ;
+.discoverButtonReverse a {
+  background: white;
   color: #82b440;
   border-radius: 0;
   position: relative;
@@ -287,16 +298,18 @@ a {
   padding: 12px 35px;
   cursor: pointer;
 }
-.discoverButtonReverse label{
+
+.discoverButtonReverse label {
   color: #82b440;
   cursor: pointer;
 
 }
-.discoverButtonReverse:hover label{
+
+.discoverButtonReverse:hover label {
   color: white;
 }
 
-.discoverButtonReverse a::after{
+.discoverButtonReverse a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -314,7 +327,7 @@ a {
 
 }
 
-.discoverButtonReverse:hover a::after{
+.discoverButtonReverse:hover a::after {
   z-index: -1;
   transform: scale(1);
   border-radius: 0;
@@ -357,14 +370,17 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
 .asking-form-wrap {
   background: #fff7f5;
   padding: 45px 40px;
   margin-top: -100px;
 }
-form.style-1 .form-inner input, form.style-1 .form-inner textarea {
+
+form.style-1 .form-inner input,
+form.style-1 .form-inner textarea {
   border: 1px solid #ddd;
-  height: 50px;
+  height: 60px;
   line-height: 50px;
   font-size: 16px;
   color: black;
@@ -373,8 +389,9 @@ form.style-1 .form-inner input, form.style-1 .form-inner textarea {
   padding: 0 20px;
   transition: all .4s ease;
 }
-form.style-1 .form-inner input:focus, form.style-1 .form-inner textarea:focus{
-  outline: none !important;
-  border:1px solid #82b440;
-}
 
+form.style-1 .form-inner input:focus,
+form.style-1 .form-inner textarea:focus {
+  outline: none !important;
+  border: 1px solid #82b440;
+}

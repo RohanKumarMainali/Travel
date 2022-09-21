@@ -29,6 +29,7 @@ const Ask = () => {
                                     <div className="col-md-12">
                                         <div className="form-inner">
                                             <textarea
+                                         
                                                 name="message"
                                                rows={6}
                                                 placeholder="Write your message here.."
