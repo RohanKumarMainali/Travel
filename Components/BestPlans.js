@@ -28,12 +28,15 @@ function BestPlans() {
           <div className="row justify-content-center g-4">
             <div className={`col-md-4 col-sm-8 best-plan`}>
               <div className='best-plan-single1'>
-                  <img
+                <div className="image">
+                <img
                     style={{ width: '100%' }}
-                    className="banner-img1 img-thumbnail img-fluid"
+                    className="img-fluid"
                     src="/image/best-plan21.png"
                     alt=""
                   />
+                </div>
+                 
 
                 <div class="content">
                   <p>From $200</p>
@@ -72,7 +75,7 @@ function BestPlans() {
               <div className='best-plan-single1'>
                   <img
                     style={{ width: '100%' }}
-                    className="banner-img1 img-thumbnail img-fluid"
+                    className="img-fluid"
                     src="/image/best-plan22.png"
                     alt=""
                   />
@@ -114,7 +117,7 @@ function BestPlans() {
               <div className='best-plan-single1'>
                   <img
                     style={{ width: '100%' }}
-                    className="banner-img1  img-fluid"
+                    className="img-fluid"
                     src="/image/best-plan23.png"
                     alt=""
                   />
