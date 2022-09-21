@@ -9,6 +9,7 @@ import Sticky from '../Components/Sticky'
 import Package from '../Components/PopularPackages'
 import Ask from '../Components/Ask'
 import Success from '../Components/Success'
+import Testimonial from '../Components/Testimonial'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Sticky />
       <Ask />
       <Success />
+      <Testimonial />
     </div>
   )
 }
