@@ -8,6 +8,7 @@ import Destination from '../Components/Destination'
 import Sticky from '../Components/Sticky'
 import Package from '../Components/PopularPackages'
 import Ask from '../Components/Ask'
+import Success from '../Components/Success'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Destination />
       <Sticky />
       <Ask />
+      <Success />
     </div>
   )
 }

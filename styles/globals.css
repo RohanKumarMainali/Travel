@@ -395,3 +395,47 @@ form.style-1 .form-inner textarea:focus {
   outline: none !important;
   border: 1px solid #82b440;
 }
+
+.counter-wrapper {
+  background: #fff;
+  box-shadow: 4px 3px 40px rgb(16 33 34 / 6%);
+  padding: 20px;
+}
+.counter-single {
+  padding: 25px 0;
+  cursor: pointer;
+}
+.counter-single .counter-icon {
+  margin-bottom: 12px;
+}
+.counter-single svg {
+  fill:  #82b440;
+  transition: all .5s ease;
+}
+.counter-single .coundown h3 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.bi-plus-lg:before {
+  content: "\f64d";
+}
+.bi:before, [class*=" bi-"]:before, [class^=bi-]:before {
+  display: inline-block;
+  font-family: bootstrap-icons!important;
+  font-style: normal;
+  font-weight: 400!important;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.counter-single:hover .counter-icon svg{
+  transform: scale(1.3);
+}
