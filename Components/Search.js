@@ -3,7 +3,7 @@ import { GoLocation } from 'react-icons/go';
 import Style from '../public/css/search.module.css'
 const Search = () => {
     return (
-        <div className="container bg-light p-4" style={{ marginTop: "100px" }}>
+        <div className="container shadow bg-light p-4" style={{ marginTop: "100px" }}>
             <div className={`row ${Style.row}`}>
                 <div className="col-md-3 my-4 col-12 d-flex justify-content-center align-items-center">
                     <GoLocation />
