@@ -1211,7 +1211,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 .site-content {
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .hero-interior__meta {
@@ -1335,26 +1335,4 @@ form.style-1 .newsletter-form .form-inner textarea {
   padding: 0;
 }
 
-.include-exclue{
-}
 
-/* .include-exclue {
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 25%);
-  background-color: #fff;
-  margin-bottom: 30px;
-
-  float: left;
-  list-style: none;
-  position: relative;
-} */
-.btn-outline-main {
-  color: #90b956;
-  border-color: #90b956;
-}
-.btn-outline-main:hover {
-  color: white;
-  border-color: white;
-  background: #90b956;
-}

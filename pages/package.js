@@ -36,9 +36,11 @@ function packageDetails() {
         <div
           className="hero-interior"
           style={{
-            background:
-              'url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg) no-repeat center center',
+            background: "url('/image/mountain.jpg' ) ",
             backgroundSize: 'cover',
+            objectFit: 'cover',
+            backgroundPosition: 'center',
+            
           }}
         >
           <div className="hero-interior__content">
