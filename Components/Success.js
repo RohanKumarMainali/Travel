@@ -2,7 +2,7 @@ import React from 'react'
 
 const Success = () => {
     return (
-        <div className="counter-section pb-120">
+        <div className="counter-section my-5 py-5">
             <div className="container">
                 <div className="counter-wrapper">
                     <div className="row g-2 d-flex justify-content-center">
