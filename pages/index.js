@@ -13,6 +13,7 @@ import Ask from '../Components/Ask'
 import Success from '../Components/Success'
 import Testimonial from '../Components/Testimonial'
 import Blog from '../Components/Blog'
+import Instagram from '../Components/Instagram'
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
       <Success />
       <Testimonial />
       <Blog></Blog>
+      <Instagram />
     </div>
   )
 }
