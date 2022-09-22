@@ -860,6 +860,8 @@ form.style-1 .newsletter-form .form-inner textarea {
       rgba(9, 16, 13, 0.88)
     ),
     url('/image/background.png');
+
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
