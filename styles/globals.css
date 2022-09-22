@@ -808,7 +808,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 100%;
   object-fit: cover;
 }
-.swiper-pagination span{
+.swiper-pagination span {
   display: none;
 }
 .swiper-pointer-events {
@@ -861,7 +861,6 @@ form.style-1 .newsletter-form .form-inner textarea {
     ),
     url('/image/background.png');
 
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -870,7 +869,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 .footer-section:before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
@@ -887,7 +886,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 .footer-section .footer-about {
-  background-color: hsla(0,0%,7%,.9);
+  background-color: hsla(0, 0%, 7%, 0.9);
   padding: 25px;
   border-radius: 50%;
   position: relative;
@@ -900,7 +899,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -909,7 +908,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   left: 50%;
   transform: translateX(-50%);
   top: 40px;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .footer-section .footer-item h4 {
@@ -927,23 +926,18 @@ form.style-1 .newsletter-form .form-inner textarea {
   list-style: none;
 }
 
-
-
 .footer-section .footer-item .link-list li {
   margin-bottom: 15px;
   padding-left: 0;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
   position: relative;
 }
 
-
-
 .footer-section .footer-item .contact-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 .footer-section .footer-item .contact-list li {
   display: flex;
@@ -962,11 +956,9 @@ form.style-1 .newsletter-form .form-inner textarea {
   border: 1px solid #90b956;
   color: #90b956;
   display: block;
-  transition: all .45s ease;
+  transition: all 0.45s ease;
   font-size: 16px;
 }
-
-
 
 .footer-section .footer-item .contact-list li .text {
   color: white;
@@ -986,11 +978,11 @@ form.style-1 .newsletter-form .form-inner textarea {
   border: 1px solid #90b956;
   color: #90b956;
   display: block;
-  transition: all .45s ease;
+  transition: all 0.45s ease;
   font-size: 16px;
 }
 
-.footer-section .footer-top a{
+.footer-section .footer-top a {
   color: white;
 }
 
@@ -1029,7 +1021,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 
 .footer-section .footer-bottom {
   padding: 16px 0;
-  border-top: 1px solid hsla(0,0%,100%,.1);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
 .footer-bottom p {
@@ -1045,7 +1037,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   font-weight: 500;
   color: #90b956;
 }
-.egns-lab:hover{
+.egns-lab:hover {
   color: #90b956;
 }
 
@@ -1055,14 +1047,14 @@ form.style-1 .newsletter-form .form-inner textarea {
   margin-right: 15px;
 }
 
- .footer-bottom  ul{
+.footer-bottom ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .footer-section .footer-bottom .f-bottom-list li:first-child a:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   top: 50%;
@@ -1071,14 +1063,15 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 15px;
   background: white;
 }
-.f-bottom-list a{
+.f-bottom-list a {
   color: white;
 }
 .f-bottom-list a:hover {
   color: #90b956;
 }
 
-.footer-section .footer-about .footer1-logo p, .info-single .info-text .footer-section .footer-about .footer1-logo a {
+.footer-section .footer-about .footer1-logo p,
+.info-single .info-text .footer-section .footer-about .footer1-logo a {
   font-size: 16px;
   font-weight: 400;
   color: #90b956;
@@ -1086,28 +1079,37 @@ form.style-1 .newsletter-form .form-inner textarea {
   margin-top: 10px;
 }
 
-
 .footer-section .footer-about svg {
-    -webkit-animation: rotate 15s linear infinite;
-    animation: spin 15s linear infinite;
+  -webkit-animation: rotate 15s linear infinite;
+  animation: spin 15s linear infinite;
 }
-
-
 
 @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
- .footer-social i:hover {
+.footer-social i:hover {
   background: #90b956;
   border: 1px solid #90b956;
 }
@@ -1122,15 +1124,11 @@ form.style-1 .newsletter-form .form-inner textarea {
   text-align: center;
   font-size: 16px;
   border-radius: 50%;
-  transition: all .5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
-
-
-
-
 .bx {
-  font-family: boxicons!important;
+  font-family: boxicons !important;
   font-weight: 400;
   font-style: normal;
   font-feature-settings: normal;
@@ -1145,7 +1143,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 .footer-section .footer-item .link-list li::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 12px;
   left: 0;
@@ -1154,7 +1152,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   display: block;
   background: #90b956;
   opacity: 0;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 
 .footer-section .footer-item .link-list li:hover {
@@ -1169,9 +1167,8 @@ form.style-1 .newsletter-form .form-inner textarea {
   opacity: 1;
 }
 
-
 .footer-section .footer-item h4::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1179,9 +1176,9 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 2px;
   border-radius: 30px;
   display: block;
-  background: linear-gradient(90deg,#90b956,transparent);
+  background: linear-gradient(90deg, #90b956, transparent);
 }
-.swiper-slide{
+.swiper-slide {
   background: transparent;
 }
 
@@ -1190,7 +1187,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   font-size: 3.75rem;
   width: 75%;
   margin-bottom: 28px;
-  font-family: cerebri sans heavy,sans-serif;
+  font-family: cerebri sans heavy, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -1205,29 +1202,30 @@ form.style-1 .newsletter-form .form-inner textarea {
   width: 100%;
 }
 
-.hero-interior{
-  background: url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg) no-repeat center center;
+.hero-interior {
+  background: url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg)
+    no-repeat center center;
   background-size: cover;
   position: relative;
   min-height: 460px;
 }
 
-.site-content{
+.site-content {
   margin-top: 5%;
 }
 
-
 .hero-interior__meta {
-    padding: 15px 25px;
-    border-radius: 34px;
-    background-color: rgba(19,58,40,.23);
-    display: inline-block;
+  padding: 15px 25px;
+  border-radius: 34px;
+  background-color: rgba(19, 58, 40, 0.23);
+  display: flex;
+  justify-content: space-around;
+  width: 28%;
 }
 /* responsive */
 
-@media screen and (max-width:1058px) {
-
- .testimonial-wrapper{
+@media screen and (max-width: 1058px) {
+  .testimonial-wrapper {
     flex-direction: column;
   }
   .testimonial-section .testimonial-wrapper .newsletter-area {
@@ -1236,7 +1234,7 @@ form.style-1 .newsletter-form .form-inner textarea {
     justify-content: center;
     align-items: center;
   }
-  .testimonial-area{
+  .testimonial-area {
     width: 100%;
   }
   .testimonial-section .testimonial-wrapper .testimonial-area {
@@ -1247,4 +1245,44 @@ form.style-1 .newsletter-form .form-inner textarea {
     align-items: center;
     justify-content: center;
   }
+}
+
+.hero-interior__meta span {
+  color: #fff;
+  font-size: 1.125rem;
+  display: inline-block;
+  margin-right: 17px;
+  display: flex;
+}
+
+.hero-interior {
+  display: flex;
+}
+
+.hero-interior__meta span .icon-destination {
+  width: 16px;
+  height: 24px;
+}
+
+.hero-interior__meta span svg {
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.hero-interior:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(#272c2f)
+  );
 }
