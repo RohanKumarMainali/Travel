@@ -776,6 +776,8 @@ form.style-1 .newsletter-form .form-inner textarea {
   position: relative;
   transition-property: transform;
 }
+
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -837,4 +839,19 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 100%;
   position: relative;
   transition-property: transform;
+}
+
+.partner-single img{
+  vertical-align: middle;
+  filter: grayscale(0);
+  opacity: 1;
+  transition: all .45s ease;
+}
+
+.swiper-pagination-bullets{
+  display: none;
+}
+
+.partner-single:hover img{
+  filter: grayscale(1);
 }
