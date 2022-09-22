@@ -1184,3 +1184,42 @@ form.style-1 .newsletter-form .form-inner textarea {
 .swiper-slide{
   background: transparent;
 }
+
+.hero-interior__title {
+  color: #fff;
+  font-size: 3.75rem;
+  width: 75%;
+  margin-bottom: 28px;
+  font-family: cerebri sans heavy,sans-serif;
+  letter-spacing: -1px;
+}
+
+.single-trip .hero-interior__content {
+  bottom: 34px;
+}
+
+.hero-interior__content {
+  position: absolute;
+  bottom: 1%;
+  left: 10%;
+  width: 100%;
+}
+
+.hero-interior{
+  background: url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  min-height: 460px;
+}
+
+.site-content{
+  margin-top: 5%;
+}
+
+
+.hero-interior__meta {
+    padding: 15px 25px;
+    border-radius: 34px;
+    background-color: rgba(19,58,40,.23);
+    display: inline-block;
+}
