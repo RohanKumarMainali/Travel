@@ -2,9 +2,9 @@ import React from 'react'
 
 const Detail = () => {
   return (
-    <div className="container mt-5 py-5">
+    <div className="container  py-5">
       <div className="row">
-        <div className="col-md-8 mb-5 ">
+        <div className="col-md-8  ">
           <div className="col-md-12 border mb-4 p-4">
             <h3 className="fw-bold">Overview</h3>
             <hr className="px-4" />

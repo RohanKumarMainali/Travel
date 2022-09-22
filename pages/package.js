@@ -40,7 +40,6 @@ function packageDetails() {
             backgroundSize: 'cover',
             objectFit: 'cover',
             backgroundPosition: 'center',
-            
           }}
         >
           <div className="hero-interior__content">
@@ -64,9 +63,41 @@ function packageDetails() {
           </div>
           <div className="quick-contact"></div>
         </div>
+        <nav class="container scrollspy mt-4">
+          <div className="row">
+            <div className="col-md-8 shadow">
+              <ul className="m-0 p-0 d-flex flex-wrap justifly-content-center align-items-center">
+                <li class="">
+                  <a href="#overview">Overview</a>
+                </li>
+                <li class="">
+                  <a href="#itinerary">Your Itinerary</a>
+                </li>
+                <li class="">
+                  <a href="#trip-additional-info">Additional Info</a>
+                </li>
+                <li class="">
+                  <a href="#why-us">Why US</a>
+                </li>
+                <li class="">
+                  <a href="#trip-faq">FAQ</a>
+                </li>
+                <li class="">
+                  <a href="#trip-map">Map</a>
+                </li>{' '}
+                <li class="">
+                  <a href="#includes">What To Expect</a>
+                </li>
+                <li class="">
+                  <a href="#fixed-dates">Cost &amp; Dates</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       <Detail />
-      
     </>
   )
 }

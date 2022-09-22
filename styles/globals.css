@@ -1336,3 +1336,42 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 
+.scrollspy {
+  background: #fff;
+  height: 60px;
+  width: 100%;
+  font-family: cerebri sans bold,sans-serif;
+  font-size: 1.125rem;
+}
+
+.scrollspy ul {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.scrollspy li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.scrollspy a {
+  color: #181b1a;
+  display: block;
+  text-decoration: none;
+  padding: 17px 0;
+  position: relative;
+  height: 60px;
+}
+
+.btn-outline-main {
+  color: #90b956;
+  border-color: #90b956;
+}
+.btn-outline-main:hover {
+  color: white;
+  border-color: white;
+  background: #90b956;
+}
