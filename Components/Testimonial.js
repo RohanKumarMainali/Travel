@@ -7,7 +7,7 @@ import SwiperCore, { Autoplay } from 'swiper';
 SwiperCore.use([Autoplay]);
 const Testimonial = () => {
     return (
-        <div className="testimonial-section overflow-hidden">
+        <div className="testimonial-section my-5 py-5 overflow-hidden">
             <div className="container-fluid px-0">
                 <div className="testimonial-wrapper d-flex flex-wrap">
                     <div className="testimonial-area ">

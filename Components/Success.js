@@ -2,7 +2,7 @@ import React from 'react'
 
 const Success = () => {
     return (
-        <div className="counter-section pb-120">
+        <div className="counter-section my-5 py-5">
             <div className="container">
                 <div className="counter-wrapper">
                     <div className="row g-2 d-flex justify-content-center">
@@ -13,6 +13,7 @@ const Success = () => {
                                         width={58}
                                         height={58}
                                         viewBox="0 0 58 58"
+                            
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clipPath="url(#clip0_1411_6509)">

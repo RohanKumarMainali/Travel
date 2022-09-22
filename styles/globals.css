@@ -1223,3 +1223,28 @@ form.style-1 .newsletter-form .form-inner textarea {
     background-color: rgba(19,58,40,.23);
     display: inline-block;
 }
+/* responsive */
+
+@media screen and (max-width:1058px) {
+
+ .testimonial-wrapper{
+    flex-direction: column;
+  }
+  .testimonial-section .testimonial-wrapper .newsletter-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-area{
+    width: 100%;
+  }
+  .testimonial-section .testimonial-wrapper .testimonial-area {
+    width: 100%;
+    background: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
