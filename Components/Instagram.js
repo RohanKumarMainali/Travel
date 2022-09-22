@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+
 import { Pagination } from "swiper";
 
 const Instagram = () => {
@@ -15,10 +16,9 @@ const Instagram = () => {
             </div>
                     <div className="">
                         <Swiper
-                            slidesPerView={1}
+                            slidesPerView={5}
                             spaceBetween={10}
-                            autoplay={true}
-                            lazy ={true}
+                            loop={true}
                             pagination={{
                                 el: ".swiper-pagination"
                             }}

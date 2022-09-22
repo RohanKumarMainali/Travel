@@ -855,3 +855,6 @@ form.style-1 .newsletter-form .form-inner textarea {
 .partner-single:hover img{
   filter: grayscale(1);
 }
+.swiper-slide{
+  background: transparent;
+}

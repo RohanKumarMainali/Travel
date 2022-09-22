@@ -14,6 +14,7 @@ import Blog from '../Components/Blog'
 import Instagram from '../Components/Instagram'
 import Client from '../Components/Client'
 import Script from 'next/script'
+import Testmonial from "../Components/Testimonial"
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
       <Ask />
       <BestPlans></BestPlans>
       <Success />
+      <Testmonial />
       <Blog></Blog>
       <Instagram />
       <Client/>

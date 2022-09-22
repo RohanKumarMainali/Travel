@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaHiking } from 'react-icons/fa';
 import Style from "../public/css/type.module.css"
+
 const Types = () => {
 
     return (
