@@ -13,13 +13,14 @@
     "bootstrap-icons": "^1.9.1",
     "next": "12.3.0",
     "node-sass": "^7.0.3",
-    "react-responsive-carousel": "^3.2.23",
-    "sass": "^1.54.9",
-    "swiper": "^8.4.2",
+    "node-scss": "^7.0.3",
     "nuka-carousel": "^5.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.55.0",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "eslint": "8.23.1",
