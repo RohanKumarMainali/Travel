@@ -14,12 +14,8 @@ import Blog from '../Components/Blog'
 import Instagram from '../Components/Instagram'
 import Client from '../Components/Client'
 import Script from 'next/script'
-<<<<<<< HEAD
 import Testimonial from '../Components/Testimonial'
 import Footer from '../Components/Footer'
-=======
-import Testmonial from "../Components/Testimonial"
->>>>>>> 5eb10e7719eb13f48e8fff2e64338ac0525f3161
 
 export default function Home() {
   return (
