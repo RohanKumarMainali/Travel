@@ -1286,3 +1286,13 @@ form.style-1 .newsletter-form .form-inner textarea {
     to(#272c2f)
   );
 }
+
+.btn-outline-main {
+  color: #90b956;
+  border-color: #90b956;
+}
+.btn-outline-main:hover {
+  color: white;
+  border-color: white;
+  background: #90b956;
+}
