@@ -46,41 +46,21 @@ function packageDetails() {
               <h1 className="hero-interior__title ">Everest Base Camp Trek</h1>
               <div className="hero-interior__meta">
                 <span>
-                  <svg className="icon icon-destination" aria-hidden="true">
-                    <use
-                      xlinkHref="https://www.myeveresttrip.com/wp-content/themes/lds_travel/assets/images/symbol-defs.svg#icon-destination"
-                      x={0}
-                      y={0}
-                    />
-                  </svg>
+                  <div className="bi bi-geo-alt-fill"></div>
                   Nepal
                 </span>
                 <span>
-                  <svg className="icon icon-day" aria-hidden="true">
-                    <use
-                      xlinkHref="https://www.myeveresttrip.com/wp-content/themes/lds_travel/assets/images/symbol-defs.svg#icon-day"
-                      x={0}
-                      y={0}
-                    />
-                  </svg>
+                  <div className="bi bi-brightness-high-fill"></div>
                   14 Days
                 </span>
                 <span>
-                  <svg className="icon icon-night" aria-hidden="true">
-                    <use
-                      xlinkHref="https://www.myeveresttrip.com/wp-content/themes/lds_travel/assets/images/symbol-defs.svg#icon-night"
-                      x={0}
-                      y={0}
-                    />
-                  </svg>
+                  <div className="bi bi-moon-stars-fill"></div>
                   13 Nights
                 </span>
               </div>
             </div>
           </div>
-          <div className="quick-contact">
-            
-          </div>
+          <div className="quick-contact"></div>
         </div>
       </div>
       <Detail />

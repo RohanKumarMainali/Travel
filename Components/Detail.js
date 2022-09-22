@@ -69,10 +69,31 @@ const Detail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 position-relative">
-                    <div className="packages position-fixed border">
+                <div style={{position:'relative'}}  className="col-md-4 ">
+                    <div  style={{top:'10%', display: "unset"}} className="packages position-sticky border">
                         <div className="package">
                             <h4>Package Summary</h4>
+                            <hr />
+                        </div>
+                        <div className="package">
+                            <div className="dt d-flex">
+                                <p>Package Includes:</p>
+                                <i class="bi mx-1 bi-bicycle"></i>
+                                <i class="bi mx-1 bi-bicycle"></i>
+                                <i class="bi mx-1 bi-bicycle"></i>
+                                <i class="bi mx-1 bi-bicycle"></i>
+                            </div>
+                            <hr />
+                        </div>
+                        <div className="package">
+                            <h4>Highlights of Everest Base Camp Trek</h4>
+                            <hr />
+                        </div>
+                        <div className="package">
+                            <div className="dt d-flex">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <p>Experience the Lukla flight to one of the most Adventures airports in the world, Tenzing-Hillary Airport </p>
+                            </div>
                             <hr />
                         </div>
                     </div>
