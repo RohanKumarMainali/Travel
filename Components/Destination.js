@@ -54,7 +54,8 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className={`${Style.destinationSingle1}mb-4 mx-3`}>
+       
+        <div className={`${Style.destinationSingle1} my-4 mx-3`}>
           <img
             src="/image/destnation14.png"
             className="destination-img img-fluid"
