@@ -30,7 +30,7 @@ const Sticky = () => {
                                     className="popup-youtube video-icon"
                                     style={{ cursor: "pointer" }}
                                 >
-                                    <BsFillPlayCircleFill />
+                                    <BsFillPlayCircleFill className='text-light h4' />
                                 </a>
                             </div>
                             <span className={Style.watchvideo}>Watch Now</span>
