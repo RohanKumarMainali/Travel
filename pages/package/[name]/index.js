@@ -1,9 +1,34 @@
-import React from 'react'
-import Detail from '../Components/Detail'
-import Navbar from '../Components/Navbar'
+import React, { useEffect, useState } from 'react'
+import Detail from '../../../Components/Detail'
+import Navbar from '../../../Components/Navbar'
 import Head from 'next/head'
 import Script from 'next/script'
+import { useRouter } from 'next/router'
+import axios from 'axios'
 function packageDetails() {
+  const router = useRouter()
+  let packageName = router.query.name
+  const [singlePackage, setPackage] = useState()
+  const [packageDays,setPackageDays] = useState()
+
+  const getPackage = async () => {
+    const response = await axios.get(
+      'http://127.0.0.1:8000/package/' + packageName,
+    )
+    if(packageName !== undefined){
+      setPackage(response.data[0])
+      const daysResponse = await axios.get(
+        `http://127.0.0.1:8000/day-details/${response.data[0].id}`,
+      )
+      setPackageDays(daysResponse.data)
+      console.log(daysResponse)
+    }
+  }
+
+  useEffect(() => {
+    getPackage();
+  }, [packageName])
+
   return (
     <>
       <Head>
@@ -34,17 +59,21 @@ function packageDetails() {
       <Navbar />
       <div id="content" className="site-content">
         <div
-          className="hero-interior"
+          className="new"
           style={{
-            background: "url('/image/mountain.jpg' ) ",
+            backgroundImage: `url('http://127.0.0.1:8000/${singlePackage?.image}') `,
+            minHeight: '500px',
+            position: 'relative',
+          
             backgroundSize: 'cover',
-            objectFit: 'cover',
-            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+
           }}
         >
           <div className="hero-interior__content">
             <div className="container ">
-              <h1 className="hero-interior__title ">Everest Base Camp Trek</h1>
+              <h1 className="hero-interior__title ">{singlePackage?.name}</h1>
               <div className="hero-interior__meta">
                 <span>
                   <div className="bi bi-geo-alt-fill"></div>
@@ -52,11 +81,12 @@ function packageDetails() {
                 </span>
                 <span>
                   <div className="bi bi-brightness-high-fill"></div>
-                  14 Days
+                  {singlePackage?.days + ' Days'}
                 </span>
                 <span>
                   <div className="bi bi-moon-stars-fill"></div>
-                  13 Nights
+                  {singlePackage?.days-1 + ' Nights'}
+                  
                 </span>
               </div>
             </div>
@@ -91,13 +121,15 @@ function packageDetails() {
                 <li class="">
                   <a href="#fixed-dates">Cost &amp; Dates</a>
                 </li>
-                
               </ul>
             </div>
           </div>
         </nav>
       </div>
-      <Detail />
+      <Detail 
+        singlePackage = {singlePackage}
+        packageDays = {packageDays}
+      />
     </>
   )
 }

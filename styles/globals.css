@@ -1424,3 +1424,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   border-radius: 0;
   opacity: 1;
 }
+.hero-interior {
+  background-size: cover;
+    background-position: center;
+}
