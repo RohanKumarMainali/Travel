@@ -183,3 +183,21 @@
         margin-top: 0px;
     }
 }
+@media screen and (max-width:768px) {
+    .leftImage{
+        display: none;
+        
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .mid span::after{
+        display: none;
+    }
+    .mid h1::after{ 
+        display: none;
+    }
+    .col4{
+        margin-top: 50px;
+    }
+}

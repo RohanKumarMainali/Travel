@@ -14,7 +14,7 @@ function MainHome() {
           <div className={Style.icon1}>
             <img src='image/cloud2.svg'></img>
           </div>
-            <div className="row">
+            <div className={`row d-flex ${Style.row}`}>
                 <div className={`col-md-3 p-5 mt-10 ${Style.leftImage}`}>
                     <img src='image/banner-image1.png'></img>
                 </div>
@@ -27,7 +27,7 @@ function MainHome() {
                     <a><label>Discover More</label></a>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className={`col-md-4 ${Style.col4}`}>
                     <img src='image/banner-image2.png'></img>
                 </div>
             </div>

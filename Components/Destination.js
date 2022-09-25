@@ -8,8 +8,8 @@ const Destination = () => {
         <h1>Your Desired Destinationn</h1>
         <img src="/image/section-title-vector.svg" alt="" />
       </div>
-      <div className="d-flex justify-content-center align-items-center">
-        <div className={`${Style.destinationSingle1} mx-3`}>
+      <div className="d-flex flex-wrap justify-content-center align-items-center">
+        <div className={`${Style.destinationSingle1} mb-4 mx-3`}>
           <img
             src="/image/destnation11.png"
             className="destination-img img-fluid"
@@ -24,7 +24,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className={`${Style.destinationSingle1} mx-3`}>
+        <div className={`${Style.destinationSingle1} mb-4 mx-3`}>
           <img
             src="/image/destnation12.png"
             className="destination-img img-fluid"
@@ -39,7 +39,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className={`${Style.destinationSingle1} mx-3`}>
+        <div className={`${Style.destinationSingle1} mb-4 mx-3`}>
           <img
             src="/image/destnation13.png"
             className="destination-img img-fluid"
@@ -54,7 +54,8 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className={`${Style.destinationSingle1} mx-3`}>
+       
+        <div className={`${Style.destinationSingle1} my-4 mx-3`}>
           <img
             src="/image/destnation14.png"
             className="destination-img img-fluid"
@@ -69,7 +70,7 @@ const Destination = () => {
             </div>
           </div>
         </div>
-        <div className={`${Style.destinationSingle1} mx-3`}>
+        <div className={`${Style.destinationSingle1} my-4 mx-3`}>
           <img
             src="/image/destnation15.png"
             className="destination-img img-fluid"
