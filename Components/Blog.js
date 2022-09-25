@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 function Blog() {
+  const [blogs, setBlogs] = useState([])
+
+  const getBlog = async () => {
+    const response = await axios.get('http://127.0.0.1:8000/blog/')
+    console.log(response.data)
+    setBlogs(response.data)
+  }
+
+  useEffect(() => {
+    getBlog()
+  }, [])
+
   return (
     <>
       <div class="col-xl-8 col-lg-10 col-md-12 text-center mx-auto mt-4">
@@ -12,82 +25,41 @@ function Blog() {
       </div>
       <div className="container">
         <div className="row g-5 justify-content-center">
-        <div className="col-lg-4 col-md-6 col-sm-10">
-            <div class="blog-single1">
-              <div class="image">
-                <img
-                  src="image/blog-grid1.png"
-                  class="img-fluid"
-                  alt="image"
-                />
-                <span class="blog-date">February 8, 2022</span>
-              </div>
-              <div class="content">
-                <h4>
-                  <a href="/blog-details">
-                    The Social Art of Zaha Hadid, Architecture’s Engaging
-                    Presence
-                  </a>
-                </h4>
-                <a class="read-more-btn" href="/blog-details">
-                  Continue Reading<i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6 col-sm-10">
-            <div class="blog-single1">
-              <div class="image">
-                <img
-                  src="image/blog-grid2.png"
-                  class="img-fluid"
-                  alt="image"
-                />
-                <span class="blog-date">February 8, 2022</span>
-              </div>
-              <div class="content">
-                <h4>
-                  <a href="/blog-details">
-                    The Social Art of Zaha Hadid, Architecture’s Engaging
-                    Presence
-                  </a>
-                </h4>
-                <a class="read-more-btn" href="/blog-details">
-                  Continue Reading<i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-        
-
-          <div className="col-lg-4 col-md-6 col-sm-10">
-            <div class="blog-single1">
-              <div class="image">
-                <img
-                  src="image/blog-grid3.png"
-                  class="img-fluid"
-                  alt="image"
-                />
-                <span class="blog-date">February 8, 2022</span>
-              </div>
-              <div class="content">
-                <h4>
-                  <a href="/blog-details">
-                    The Social Art of Zaha Hadid, Architecture’s Engaging
-                    Presence
-                  </a>
-                </h4>
-                <a class="read-more-btn" href="/blog-details">
-                  Continue Reading<i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          {blogs.map((blog) => {
+            return (
+              <>
+                <div className="col-lg-4 col-md-6 col-sm-10">
+                  <div class="blog-single1">
+                    <div
+                      class="image"
+                      style={{
+                        backgroundImage:
+                          `url(http://127.0.0.1:8000/${blog.image})`,
+                        height: '30vh',
+                        backgroundSize: 'cover',
+                        backgroundPosition: ' center center',
+                      }}
+                    >
+                    
+                   
+                    </div>
+                    <div class="content">
+                    <span class="blog-date">
+                        {blog.posted_on.slice(0, 10)}
+                      </span>
+                      <h4>
+                        <a href="/blog-details">{blog.title}</a>
+                      </h4>
+                      <a class="read-more-btn" href="/blog-details">
+                        Continue Reading<i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )
+          })}
         </div>
-
-        
       </div>
     </>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Detail = () => {
+const Detail = (props) => {
+  const parse = require('html-react-parser')
   return (
     <div className="container  py-5">
       <div className="row">
@@ -8,58 +9,26 @@ const Detail = () => {
           <div className="col-md-12 border mb-4 p-4">
             <h3 className="fw-bold">Overview</h3>
             <hr className="px-4" />
-            <p>
-              Embark on an adventure that is the epitome of high-altitude trips
-              as you make your way to the Everest Base Camp. The journey offers
-              a lavish spread of the Himalayas decorated with the rich Sherpa
-              culture and rich biodiversity. The Everest Base Camp Trek (EBC
-              Trek) is at the
-            </p>
+            <p>{parse(`${props?.singlePackage?.description}`)}</p>
           </div>
           <div className="border mb-4 p-4">
             <h3 className="fw-bolder">Your Itinerary</h3>
             <hr className="px-4" />
-            <div className="detail">
-              <h5 className="text-secondary fw-bold">
-                Day 01 – Arrive at Tribhuvan International Airport Kathmandu.{' '}
-              </h5>
-              <p>
-                Trek adventure begins with your arrival in Kathmandu City, the
-                capital of Nepal. Upon your arrival, we’ll meet you at the
-                Arrivals gate at Tribhuvan International Airport. A
-                representative from My Everest Trip staff will meet you at the
-                airport and help you with your luggage. Enjoy a brief tour of
-                the bustling Kathmandu city as you make your way to the hotel.
-                You will check into one of the finest Star-rated hotels located
-                at the heart of the city. As there are no planned activities for
-                this day, you can enjoy the refreshment and relax in your room.
-                In the noon or evening, you can head out to explore the city.
-                The neighboring town of Thamel is one of the most sought-after
-                destinations in Kathmandu. Enjoy touring the place and visit the
-                local shops highlighting pashmina shawls—overnight in Kathmandu
-              </p>
-            </div>
-            <div className="detail">
-              <h5 className="text-secondary fw-bold">
-                Day 03 –Phakding to Namche Bazaar (3440 m / 11283 ft) Walking
-                Distance – 10 to 12 km, Duration: 6 hours{' '}
-              </h5>
-              <p>
-                Trek adventure begins with your arrival in Kathmandu City, the
-                capital of Nepal. Upon your arrival, we’ll meet you at the
-                Arrivals gate at Tribhuvan International Airport. A
-                representative from My Everest Trip staff will meet you at the
-                airport and help you with your luggage. Enjoy a brief tour of
-                the bustling Kathmandu city as you make your way to the hotel.
-                You will check into one of the finest Star-rated hotels located
-                at the heart of the city. As there are no planned activities for
-                this day, you can enjoy the refreshment and relax in your room.
-                In the noon or evening, you can head out to explore the city.
-                The neighboring town of Thamel is one of the most sought-after
-                destinations in Kathmandu. Enjoy touring the place and visit the
-                local shops highlighting pashmina shawls—overnight in Kathmandu
-              </p>
-            </div>
+
+            {props?.packageDays?.map((element) => {
+              return (
+                <>
+                  <div className="detail">
+                    <h5 className="text-secondary fw-bold">
+                      {element.title}
+                    </h5>
+                    <p>
+                     {element.description}
+                    </p>
+                  </div>
+                </>
+              )
+            })}
           </div>
           <div className="border p-4">
             <h3 className="fw-bold">Additional Info</h3>

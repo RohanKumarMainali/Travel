@@ -1,5 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import Link from 'next/link'
+
 function BestPlans() {
+  const [packages, setPackages] = useState([])
+
+  const getPackage = async () => {
+    const response = await axios.get('http://127.0.0.1:8000/')
+    console.log(response.data)
+    setPackages(response.data)
+  }
+
+  var included = ''
+  var includedArray
+
+  useEffect(() => {
+    getPackage()
+  }, [])
+
   return (
     <>
       <div class="col-xl-8 col-lg-10 col-md-12 text-center mx-auto mt-4">
@@ -13,158 +31,65 @@ function BestPlans() {
       <div className="container">
         <div className="container px-5">
           <div className="row justify-content-center g-4">
-            <div className={`col-md-4 col-sm-8 best-plan`}>
-              <div className='best-plan-single1'>
-                <div className="image">
-                <img
-                    style={{ width: '100%' }}
-                    className="img-fluid"
-                    src="/image/best-plan21.png"
-                    alt=""
-                  />
-                </div>
-                 
+            {packages.map((singlePackage) => {
+              included = singlePackage.package_included
+              includedArray = included.split(',').slice(0, 3)
 
-                <div class="content">
-                  <p>From $200</p>
-                  <h4>
-                    <a href="/tour-package-details">
-                      Bangkok &amp; Krabi Even Bette
-                    </a>
-                  </h4>
-                  <div class="best-plan-meta">
-                    <span class="duration">
-                      <i class="bi bi-clock"></i>2 days 3 night
-                    </span>
-                    <span class="rating">
-                      <i class="bi bi-star-fill"></i>4.8 (150)
-                    </span>
+              return (
+                <>
+                  <div className={`col-md-4 col-sm-8 best-plan`}>
+                    <div className="best-plan-single1">
+                      <div
+                        className="image"
+                        style={{
+                          backgroundImage: `url(http://127.0.0.1:8000/${singlePackage.image})`,
+                          height: '30vh',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                        }}
+                      ></div>
+
+                      <div class="content">
+                        <p>{`From $ ${singlePackage.price}`}</p>
+                        <h4>
+                          <a href="/tour-package-details">
+                            {singlePackage.name}
+                          </a>
+                        </h4>
+                        <div class="best-plan-meta">
+                          <span class="duration">
+                            <i class="bi bi-clock"></i>
+                            {`${singlePackage.days} days ${
+                              singlePackage.days - 1
+                            } night`}
+                          </span>
+                          <span class="rating">
+                            <i class="bi bi-star-fill"></i>4.8 (150)
+                          </span>
+                        </div>
+                        <div class="list-area">
+                          <h5>Free Package Facility:</h5>
+                          <ul class="plan-list1">
+                            {includedArray.map((element) => {
+                              return <li>{element}</li>
+                            })}
+                          </ul>
+                        </div>
+
+                        <div className="discoverButtonReverse">
+                          <Link href={`/package/${singlePackage.name}`}>
+                            <label>Explore More</label>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="list-area">
-                    <h5>Free Package Facility:</h5>
-                    <ul class="plan-list1">
-                      <li>Free Best Tour Guided</li>
-                      <li>Free Messages</li>
-                      <li>No Booking Charge</li>
-                      <li>Best Rate Gurantee</li>
-                    </ul>
-                  </div>
-                  <div className="discoverButtonReverse">
-                  <a>
-                    <label>Explore More</label>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={`col-md-4 col-sm-8 best-plan`}>
-              <div className='best-plan-single1'>
-                  <img
-                    style={{ width: '100%' }}
-                    className="img-fluid"
-                    src="/image/best-plan22.png"
-                    alt=""
-                  />
-
-                <div class="content">
-                  <p>From $200</p>
-                  <h4>
-                    <a href="/tour-package-details">
-                      Bangkok &amp; Krabi Even Bette
-                    </a>
-                  </h4>
-                  <div class="best-plan-meta">
-                    <span class="duration">
-                      <i class="bi bi-clock"></i>2 days 3 night
-                    </span>
-                    <span class="rating">
-                      <i class="bi bi-star-fill"></i>4.8 (150)
-                    </span>
-                  </div>
-                  <div class="list-area">
-                    <h5>Free Package Facility:</h5>
-                    <ul class="plan-list1">
-                      <li>Free Best Tour Guided</li>
-                      <li>Free Messages</li>
-                      <li>No Booking Charge</li>
-                      <li>Best Rate Gurantee</li>
-                    </ul>
-                  </div>
-                  <div className="discoverButtonReverse">
-                  <a>
-                    <label>Explore More</label>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={`col-md-4 col-sm-8 best-plan`}>
-              <div className='best-plan-single1'>
-                  <img
-                    style={{ width: '100%' }}
-                    className="img-fluid"
-                    src="/image/best-plan23.png"
-                    alt=""
-                  />
-
-                <div class="content">
-                  <p>From $200</p>
-                  <h4>
-                    <a href="/tour-package-details">
-                      Bangkok &amp; Krabi Even Bette
-                    </a>
-                  </h4>
-                  <div class="best-plan-meta">
-                    <span class="duration">
-                      <i class="bi bi-clock"></i>2 days 3 night
-                    </span>
-                    <span class="rating">
-                      <i class="bi bi-star-fill"></i>4.8 (150)
-                    </span>
-                  </div>
-                  <div class="list-area">
-                    <h5>Free Package Facility:</h5>
-                    <ul class="plan-list1">
-                      <li>Free Best Tour Guided</li>
-                      <li>Free Messages</li>
-                      <li>No Booking Charge</li>
-                      <li>Best Rate Gurantee</li>
-                    </ul>
-                  </div>
-                  <div className="discoverButtonReverse">
-                  <a>
-                    <label>Explore More</label>
-                  </a>
-                </div>
-                </div>
-              </div>
-            </div>
-
-
+                </>
+              )
+            })}
           </div>
         </div>
 
-        {/* <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper> */}
         <div className="row"></div>
       </div>
     </>

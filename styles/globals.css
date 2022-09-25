@@ -1375,3 +1375,8 @@ form.style-1 .newsletter-form .form-inner textarea {
   border-color: white;
   background: #90b956;
 }
+
+.hero-interior {
+  background-size: cover;
+    background-position: center;
+}
