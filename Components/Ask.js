@@ -2,14 +2,17 @@ import axios from 'axios'
 import React from 'react'
 
 const Ask = () => {
-    const[fname, setFname] = React.useState('')
-    const[email, setEmail] = React.useState('')
-    const[msg, setMsg] = React.useState('')
+    const [fname, setFname] = React.useState('')
+    const [email, setEmail] = React.useState('')
+    const [msg, setMsg] = React.useState('')
     const postFeedback = async () => {
         try {
-            const res = await axios.post('http://localhost:8000/feedback-post/', {
+            const res = await axios.post('http://127.0.0.1:8000/feedback-post/', {
                 fname, email, msg
             })
+            setFname('')
+            setEmail('')
+            setMsg('')
             console.log(res)
         } catch (error) {
             console.log(error)

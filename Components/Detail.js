@@ -215,7 +215,7 @@ const Detail = (props) => {
             </div>
             <div className="package px-4">
               <div className="dt d-flex align-items-center">
-                <p className="me-2">package px-4 Includes:</p>
+                <p className="me-2">package Includes:</p>
                 <i
                   style={{ color: '#90b956' }}
                   class="bi h3 mx-1 bi-bicycle"
