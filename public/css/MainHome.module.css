@@ -197,4 +197,7 @@
     .mid h1::after{ 
         display: none;
     }
+    .col4{
+        margin-top: 50px;
+    }
 }
