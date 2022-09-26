@@ -3,15 +3,15 @@ import React from 'react'
 const Detail = (props) => {
   const parse = require('html-react-parser')
   return (
-    <div className="container  py-5">
+    <div className="container detailcont my-5  py-5">
       <div className="row">
-        <div className="col-md-8  ">
-          <div className="col-md-12 border mb-4 p-4">
+        <div className="col-md-8">
+          <div id='overview' className="col-md-12 border mb-4 p-4">
             <h3 className="fw-bold">Overview</h3>
             <hr className="px-4" />
             <p>{parse(`${props?.singlePackage?.description}`)}</p>
           </div>
-          <div className="border mb-4 p-4">
+          <div id='itinerary' className="border mb-4 p-4">
             <h3 className="fw-bolder">Your Itinerary</h3>
             <hr className="px-4" />
 
@@ -23,14 +23,14 @@ const Detail = (props) => {
                       {element.title}
                     </h5>
                     <p>
-                     {element.description}
+                      {element.description}
                     </p>
                   </div>
                 </>
               )
             })}
           </div>
-          <div className="border p-4">
+          <div id='trip-additional-info' className="border p-4">
             <h3 className="fw-bold">Additional Info</h3>
             <hr className="px-4" />
             <div className="detail">

@@ -93,7 +93,7 @@ function packageDetails() {
           </div>
           <div className="quick-contact"></div>
         </div>
-        <nav class="container scrollspy mt-4">
+        <nav class="container detailnav scrollspy mt-4">
           <div className="row">
             <div className="col-md-8 shadow">
               <ul className="m-0 p-0 d-flex flex-wrap justifly-content-center align-items-center">

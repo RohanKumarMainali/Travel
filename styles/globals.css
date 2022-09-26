@@ -73,6 +73,7 @@ a {
   color: white;
   cursor: pointer;
 }
+
 .discoverButton:hover label {
   color: #82b440;
 }
@@ -244,7 +245,7 @@ a {
   font-family: var(--font-work-sans);
 }
 
-.review-area > span {
+.review-area>span {
   font-size: 14px;
   font-weight: 500;
   color: #5e5e5e;
@@ -467,9 +468,11 @@ a {
   color: var(--text-secondary);
   margin-bottom: 5px;
 }
+
 .best-plan-single1 .image {
   position: relative;
 }
+
 .asking-form-wrap {
   background: #fff7f5;
   padding: 45px 40px;
@@ -739,11 +742,9 @@ form.style-1 .newsletter-form .form-inner textarea {
   z-index: 9;
   text-align: center;
   padding: 45px 30px;
-  background: linear-gradient(
-    152.97deg,
-    rgba(32, 42, 55, 0.4),
-    rgba(12, 25, 43, 0.2)
-  );
+  background: linear-gradient(152.97deg,
+      rgba(32, 42, 55, 0.4),
+      rgba(12, 25, 43, 0.2));
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   width: 100%;
@@ -765,10 +766,12 @@ form.style-1 .newsletter-form .form-inner textarea {
   border: 1px solid hsla(0, 8%, 97%, 0.16);
   padding: 35px 25px;
 }
+
 .testmonial-banner-icons i {
   color: #82b440;
   font-size: 1.4rem;
 }
+
 .swiper-sliderr {
   flex-shrink: 0;
   width: 100%;
@@ -808,12 +811,15 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 100%;
   object-fit: cover;
 }
+
 .swiper-pagination span {
   display: none;
 }
+
 .swiper-pointer-events {
   touch-action: pan-y;
 }
+
 .swiper {
   margin-left: auto;
   margin-right: auto;
@@ -823,6 +829,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   padding: 0;
   z-index: 1;
 }
+
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -832,6 +839,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   transition-property: transform;
   box-sizing: content-box;
 }
+
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
@@ -854,11 +862,10 @@ form.style-1 .newsletter-form .form-inner textarea {
 .partner-single:hover img {
   filter: grayscale(1);
 }
+
 .footer-section {
-  background-image: linear-gradient(
-      rgba(9, 16, 13, 0.88),
-      rgba(9, 16, 13, 0.88)
-    ),
+  background-image: linear-gradient(rgba(9, 16, 13, 0.88),
+      rgba(9, 16, 13, 0.88)),
     url('/image/background.png');
 
   background-size: cover;
@@ -1032,11 +1039,13 @@ form.style-1 .newsletter-form .form-inner textarea {
   margin-right: 30px;
   display: flex;
 }
+
 .egns-lab {
   font-size: 14px;
   font-weight: 500;
   color: #90b956;
 }
+
 .egns-lab:hover {
   color: #90b956;
 }
@@ -1063,9 +1072,11 @@ form.style-1 .newsletter-form .form-inner textarea {
   height: 15px;
   background: white;
 }
+
 .f-bottom-list a {
   color: white;
 }
+
 .f-bottom-list a:hover {
   color: #90b956;
 }
@@ -1088,22 +1099,27 @@ form.style-1 .newsletter-form .form-inner textarea {
   from {
     -moz-transform: rotate(0deg);
   }
+
   to {
     -moz-transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -1178,6 +1194,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   display: block;
   background: linear-gradient(90deg, #90b956, transparent);
 }
+
 .swiper-slide {
   background: transparent;
 }
@@ -1203,8 +1220,7 @@ form.style-1 .newsletter-form .form-inner textarea {
 }
 
 .hero-interior {
-  background: url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg)
-    no-repeat center center;
+  background: url(https://www.myeveresttrip.com/wp-content/uploads/2018/09/My-Everest-Trip-Everest-Base-Camp-Trek--1900x435.jpeg) no-repeat center center;
   background-size: cover;
   position: relative;
   min-height: 460px;
@@ -1222,21 +1238,25 @@ form.style-1 .newsletter-form .form-inner textarea {
   justify-content: space-around;
   width: 28%;
 }
+
 /* responsive */
 
 @media screen and (max-width: 1058px) {
   .testimonial-wrapper {
     flex-direction: column;
   }
+
   .testimonial-section .testimonial-wrapper .newsletter-area {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .testimonial-area {
     width: 100%;
   }
+
   .testimonial-section .testimonial-wrapper .testimonial-area {
     width: 100%;
     background: black;
@@ -1278,24 +1298,22 @@ form.style-1 .newsletter-form .form-inner textarea {
   top: 0;
   left: 0;
   opacity: 0.65;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0)),
-    to(#272c2f)
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      to(#272c2f));
 }
 
 
 .box__heading {
-  border-bottom: 1px solid rgba(24,27,26,.1);
+  border-bottom: 1px solid rgba(24, 27, 26, .1);
   margin-bottom: 20px;
 }
 
 .box__heading h2 {
   font-size: 1.5rem;
-  font-family: cerebri sans bold,sans-serif;
+  font-family: cerebri sans bold, sans-serif;
   color: #181b1a;
 }
 
@@ -1309,16 +1327,16 @@ form.style-1 .newsletter-form .form-inner textarea {
   position: relative;
 }
 
-.includes li{
+.includes li {
   display: flex;
 }
 
-.includes .bi-check-circle-fill{
+.includes .bi-check-circle-fill {
   color: #90b956;
   margin-right: 2%;
 }
 
-.excludes li{
+.excludes li {
   display: flex;
   margin-bottom: 9px;
   padding: 0;
@@ -1326,12 +1344,12 @@ form.style-1 .newsletter-form .form-inner textarea {
 
 }
 
-.excludes .bi-x-circle-fill{
+.excludes .bi-x-circle-fill {
   color: #ef4a4a;
   margin-right: 2%;
 }
 
-.excludes ul{
+.excludes ul {
   padding: 0;
 }
 
@@ -1340,7 +1358,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   background: #fff;
   height: 60px;
   width: 100%;
-  font-family: cerebri sans bold,sans-serif;
+  font-family: cerebri sans bold, sans-serif;
   font-size: 1.125rem;
 }
 
@@ -1357,6 +1375,7 @@ form.style-1 .newsletter-form .form-inner textarea {
   display: inline-block;
   margin-right: 20px;
 }
+
 .scrollspy a {
   color: #181b1a;
   display: block;
@@ -1370,11 +1389,13 @@ form.style-1 .newsletter-form .form-inner textarea {
   color: #90b956;
   border-color: #90b956;
 }
+
 .btn-outline-main:hover {
   color: white;
   border-color: white;
   background: #90b956;
 }
+
 .discoverButton {
   position: relative;
   z-index: 9;
@@ -1415,7 +1436,8 @@ form.style-1 .newsletter-form .form-inner textarea {
   transform: scale(0.6);
   border-radius: 0;
   opacity: 0;
-  color: #82b440;;
+  color: #82b440;
+  ;
 }
 
 .discoverButton:hover button::after {
@@ -1424,7 +1446,235 @@ form.style-1 .newsletter-form .form-inner textarea {
   border-radius: 0;
   opacity: 1;
 }
+
 .hero-interior {
   background-size: cover;
-    background-position: center;
+  background-position: center;
+}
+
+@media (max-width: 477px) {
+  .detailnav {
+    margin-bottom: 100px;
+  }
+}
+
+/*  */
+.inner-banner-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url('/image/inner-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 650px;
+}
+
+.inner-banner-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+}
+
+.inner-banner-section .inner-banner-vector {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+}
+
+.inner-banner-section .breadcrumb-area {
+  text-align: center;
+  position: relative;
+}
+
+.inner-banner-section .breadcrumb-area span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+
+.inner-banner-section .breadcrumb-area h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.info-title-area {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.info-title-area h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.info-title-area p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.info-single {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 35px 20px;
+  text-align: center;
+  transition: all .55s ease;
+  height: 300px;
+}
+
+.info-single .info-icon {
+  border: 1px solid #eee;
+  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.info-single .info-icon:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #82b440;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .55s ease;
+  opacity: 0;
+  transform: scale(.3);
+}
+
+.info-single .info-icon i {
+  font-size: 35px;
+  font-weight: 300;
+  transition: all .55s ease;
+}
+
+.bi-geo-alt:before {
+  content: "\F3E8";
+}
+
+.bi:before,
+[class*=" bi-"]:before,
+[class^=bi-]:before {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.info-single .info-text h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.info-single:hover {
+  border: 1px solid transparent;
+}
+
+.info-single:hover .info-icon:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.info-single:hover .info-icon i {
+  color: white;
+}
+.contact-from-wrapper {
+  background: #fff;
+  border: 1.5px solid #eee;
+  padding: 25px 65px 60px;
+
+}
+
+.contact-from-wrapper .form-inner {
+  padding: 15px 0;
+}
+
+.contact-from-wrapper .form-inner input,
+.contact-from-wrapper .form-inner textarea,
+.contact-from-wrapper form.style-1 .form-inner textarea,
+form.style-1 .contact-from-wrapper .form-inner textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  padding: 12px 0;
+  transition: all .45s ease;
+  font-size: 16px;
+  color: black;
+}
+
+.contact-from-wrapper .submit-btn {
+  margin-top: 25px;
+}
+
+.btn--primary {
+  background: var(--primary-color1);
+  color: var(--white);
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  border: 2px solid var(--primary-color1);
+}
+
+.eg-btn {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: all .45s ease-in-out;
+  text-transform: capitalize;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contact-from-wrapper {
+  background: #fff;
+  border: 1.5px solid rgb(241, 241, 241);
+  padding: 25px 65px 60px;
+}
+
+.contact-from-wrapper .form-inner input:focus,
+.contact-from-wrapper .form-inner textarea:focus {
+  border-bottom: 1px solid rgba(144,185,86,.7);
 }

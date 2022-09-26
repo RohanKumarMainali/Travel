@@ -8,7 +8,7 @@ import { Pagination } from 'swiper'
 
 const Instagram = () => {
   return (
-    <div className="container-fluid my-5">
+    <div className="container-fluid ">
       <div className="d-flex  align-items-center mx-5 py-5">
         <i
           style={{ color: '#5e5e5e', fontSize: '1.6rem' }}
