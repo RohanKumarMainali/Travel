@@ -1375,7 +1375,55 @@ form.style-1 .newsletter-form .form-inner textarea {
   border-color: white;
   background: #90b956;
 }
+.discoverButton {
+  position: relative;
+  z-index: 9;
+  display: inline-block;
+}
 
+.discoverButton button {
+  background: #82b440;
+  color: white;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  border: 2px solid #82b440;
+
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 12px 35px;
+  cursor: pointer;
+}
+
+
+.discoverButton button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+  transform: scale(0.6);
+  border-radius: 0;
+  opacity: 0;
+  color: #82b440;;
+}
+
+.discoverButton:hover button::after {
+  z-index: -1;
+  transform: scale(1);
+  border-radius: 0;
+  opacity: 1;
+}
 .hero-interior {
   background-size: cover;
     background-position: center;
