@@ -81,63 +81,59 @@ function index() {
       <div className="container">
         <div className="container px-5 mt-5">
           <div className="row justify-content-center g-4">
-            {packages.map( res =>  {
+            {packages.map((res) => {
+              if (res.category === category) {
+                included = res.package_included
+                includedArray = included.split(',').slice(0, 3)
 
-              if(res.category === category)  {
-              included = res.package_included
-              includedArray = included.split(',').slice(0, 3)
+                return (
+                  <>
+                    <div className={`col-md-4 col-sm-8 best-plan`}>
+                      <div className="best-plan-single1">
+                        <div
+                          className="image"
+                          style={{
+                            backgroundImage: `url(http://127.0.0.1:8000/${res.image})`,
+                            height: '30vh',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
+                        ></div>
 
-              return (
-                <>
-                  <div className={`col-md-4 col-sm-8 best-plan`}>
-                    <div className="best-plan-single1">
-                      <div
-                        className="image"
-                        style={{
-                          backgroundImage: `url(http://127.0.0.1:8000/${res.image})`,
-                          height: '30vh',
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
-                        }}
-                      ></div>
+                        <div class="content">
+                          <p>{`From $ ${res.price}`}</p>
+                          <h4>
+                            <a href="/tour-package-details">{res.name}</a>
+                          </h4>
+                          <div class="best-plan-meta">
+                            <span class="duration">
+                              <i class="bi bi-clock"></i>
+                              {`${res.days} days ${res.days - 1} night`}
+                            </span>
+                            <span class="rating">
+                              <i class="bi bi-star-fill"></i>4.8 (150)
+                            </span>
+                          </div>
+                          <div class="list-area">
+                            <h5>Free Package Facility:</h5>
+                            <ul class="plan-list1">
+                              {includedArray.map((element) => {
+                                return <li>{element}</li>
+                              })}
+                            </ul>
+                          </div>
 
-                      <div class="content">
-                        <p>{`From $ ${res.category}`}</p>
-                        <h4>
-                          <a href="/tour-package-details">
-                            {res.name}
-                          </a>
-                        </h4>
-                        <div class="best-plan-meta">
-                          <span class="duration">
-                            <i class="bi bi-clock"></i>
-                            {`${res.days} days ${
-                              res.days - 1
-                            } night`}
-                          </span>
-                          <span class="rating">
-                            <i class="bi bi-star-fill"></i>4.8 (150)
-                          </span>
-                        </div>
-                        <div class="list-area">
-                          <h5>Free Package Facility:</h5>
-                          <ul class="plan-list1">
-                            {includedArray.map((element) => {
-                              return <li>{element}</li>
-                            })}
-                          </ul>
-                        </div>
-
-                        <div className="discoverButtonReverse">
-                          <Link href={`/package/${res.name}`}>
-                            <label>Explore More</label>
-                          </Link>
+                          <div className="discoverButtonReverse">
+                            <Link href={`/package/${res.name}`}>
+                              <label>Explore More</label>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </> 
-              )}
+                  </>
+                )
+              }
             })}
           </div>
         </div>
@@ -145,7 +141,7 @@ function index() {
 
       <Instagram></Instagram>
       <Footer></Footer>
-    </> 
+    </>
   )
 }
 

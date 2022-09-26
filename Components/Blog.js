@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Link from 'next/link'
 
 function Blog() {
   const [blogs, setBlogs] = useState([])
@@ -40,15 +41,13 @@ function Blog() {
                         backgroundPosition: ' center center',
                       }}
                     >
-                    
-                   
                     </div>
                     <div class="content">
                     <span class="blog-date">
                         {blog.posted_on.slice(0, 10)}
                       </span>
                       <h4>
-                        <a href="/blog-details">{blog.title}</a>
+                        <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
                       </h4>
                       <a class="read-more-btn" href="/blog-details">
                         Continue Reading<i class="bi bi-arrow-right"></i>

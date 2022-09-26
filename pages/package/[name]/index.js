@@ -4,6 +4,7 @@ import Navbar from '../../../Components/Navbar'
 import Head from 'next/head'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
+import Footer from '../../../Components/Footer'
 import axios from 'axios'
 function packageDetails() {
   const router = useRouter()
@@ -130,6 +131,7 @@ function packageDetails() {
         singlePackage = {singlePackage}
         packageDays = {packageDays}
       />
+      <Footer></Footer>
     </>
   )
 }

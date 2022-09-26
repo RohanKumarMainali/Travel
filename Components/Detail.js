@@ -2,6 +2,12 @@ import React from 'react'
 
 const Detail = (props) => {
   const parse = require('html-react-parser')
+  var included = props?.singlePackage?.package_included.split(',');
+  var excluded = props?.singlePackage?.package_excluded.split(',');
+
+  console.log(included)
+  console.log(excluded)
+
   return (
     <div className="container  py-5">
       <div className="row">
@@ -72,48 +78,15 @@ const Detail = (props) => {
                         <h2>What's included</h2>
                       </div>
                       <div class="includes">
-                        <ul>
+                        {included?.map(data =>{
+                          <ul>
                           <li>
                             <div class="bi bi-check-circle-fill mr-3"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
-                          </li>{' '}
-                          <li>
-                            <div class="bi bi-check-circle-fill"></div>
-                            Airport/hotel pick up and drop off by private car.
+                            {/* {data} */}
                           </li>
                         </ul>
+                        })}
+                        
                       </div>
                     </div>
                   </div>
@@ -130,22 +103,7 @@ const Detail = (props) => {
                           <div class="bi bi-x-circle-fill"></div>Meals in
                           Kathmandu before and after trekking
                         </li>
-                        <li>
-                          <div class="bi bi-x-circle-fill"></div>Meals in
-                          Kathmandu before and after trekking
-                        </li>
-                        <li>
-                          <div class="bi bi-x-circle-fill"></div>Meals in
-                          Kathmandu before and after trekking
-                        </li>
-                        <li>
-                          <div class="bi bi-x-circle-fill"></div>Meals in
-                          Kathmandu before and after trekking
-                        </li>
-                        <li>
-                          <div class="bi bi-x-circle-fill"></div>Meals in
-                          Kathmandu before and after trekking
-                        </li>
+                  
                       </ul>
                     </div>
                   </div>

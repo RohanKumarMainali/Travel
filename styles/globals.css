@@ -1550,15 +1550,7 @@ h3.blog-details-subtitle {
   margin-bottom: 10px;
 }
 
-.blog-details-single .info-single .info-text a,
-.blog-details-single p,
-.info-single .info-text .blog-details-single a {
-  font-size: 14px;
-  font-weight: 400;
-  color: #5e5e5e;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
+
 
 .blog-details-single .details-img-group {
   margin-top: 0;
@@ -1697,4 +1689,22 @@ h3.blog-details-subtitle {
 
 .sidebar-social-area .sidebar-social-list a:hover  {
   color: #90b956;
+}
+
+.blog-details-single{
+  position: relative;
+  width: 100%;
+}
+
+.blog-description{
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5e5e5e;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.blog-details-single img{
+  width: 100%;
 }
