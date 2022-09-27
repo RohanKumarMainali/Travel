@@ -136,6 +136,7 @@ export default function  PackageDetails ()  {
         singlePackage = {singlePackage}
         packageDays = {packageDays}
         FAQ = {packageFAQ}
+        key = {singlePackage.id}
       />
       <Footer></Footer>
     </>
