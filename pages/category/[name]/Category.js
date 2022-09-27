@@ -84,6 +84,7 @@ export default function Category () {
         <div className="container px-5 mt-5">
           <div className="row justify-content-center g-4">
             {packages.map((res) => {
+              key=res.category
               if (res.category === category) {
                 included = res.package_included
                 includedArray = included.split(',').slice(0, 3)

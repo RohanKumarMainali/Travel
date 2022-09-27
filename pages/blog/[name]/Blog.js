@@ -83,6 +83,7 @@ export default function Blog () {
 
 
       {blogs.map(blog=>{
+        key=blog.id
           if(blog.slug === slug){
             return(
 
