@@ -1708,3 +1708,9 @@ h3.blog-details-subtitle {
 .blog-details-single img{
   width: 100%;
 }
+
+.faq-row  .row-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+          }
+

@@ -1,10 +1,33 @@
 import React from 'react'
+import Faq from "react-faq-component";
 
 const Detail = (props) => {
   const parse = require('html-react-parser')
   var included = props?.singlePackage?.package_included.split(',')
   var excluded = props?.singlePackage?.package_excluded.split(',')
   let FAQs = props.FAQ
+  console.log(FAQs)
+
+  let newArr = [];
+  FAQs?.map(element => newArr.push({title : element.question, content : element.answer}))
+
+  const data = {
+    rows: newArr
+  }
+
+  const styles = {
+    // bgColor: 'white',
+    rowTitleColor: "black",
+    rowFontWeight: '500',
+     rowTitleTextWeight: '800',
+    // rowContentColor: 'grey',
+    // arrowColor: "red",
+};
+
+const config = {
+    animate: true,
+    tabFocus: true,
+};
 
   return (
     <div className="container detailcont my-5  py-5">
@@ -100,14 +123,19 @@ const Detail = (props) => {
           <div className="border mt-5 mb-4 p-4">
             <h3 className="fw-bolder">FAQ</h3>
             <hr className="px-4" />
-            {FAQs?.map((FAQ) => {
+            <Faq
+                data={data}
+                styles={styles}
+                config={config}
+            />
+            {/* {FAQs?.map((FAQ) => {
               return (
                 <div className="detail">
                   <h5 className=" fw-bold">{FAQ.question}</h5>
                   <p>{FAQ.answer}</p>
                 </div>
               )
-            })}
+            })} */}
           </div>
         </div>
 
