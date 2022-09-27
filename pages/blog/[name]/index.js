@@ -83,11 +83,11 @@ export default function Blog () {
 
 
       {blogs.map(blog=>{
-        key=blog.id
+       
           if(blog.slug === slug){
             return(
 
-            <div className="container mt-5">
+            <div  key={blog.id} className="container mt-5">
             <div className="row">
               <div className="col-lg-8 pe-lg-3">
                 <div className="blog">

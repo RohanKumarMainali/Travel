@@ -12,7 +12,7 @@ import Link from 'next/link'
 import Navbar from '../../../Components/Navbar'
 import { useRouter } from 'next/router'
 
-export default function Category () {
+export default function Category() {
   const router = useRouter()
   let category = router.query.name
   const [packages, setPackages] = useState([])
@@ -84,14 +84,16 @@ export default function Category () {
         <div className="container px-5 mt-5">
           <div className="row justify-content-center g-4">
             {packages.map((res) => {
-              key=res.category
               if (res.category === category) {
                 included = res.package_included
                 includedArray = included.split(',').slice(0, 3)
 
                 return (
                   <>
-                    <div className={`col-md-4 col-sm-8 best-plan`}>
+                    <div
+                      key={res.category}
+                      className={`col-md-4 col-sm-8 best-plan`}
+                    >
                       <div className="best-plan-single1">
                         <div
                           className="image"
@@ -147,4 +149,3 @@ export default function Category () {
     </>
   )
 }
-
