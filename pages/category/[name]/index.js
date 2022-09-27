@@ -94,7 +94,8 @@ export default function Category() {
                       key={res.id}
                       className={`col-md-4 col-sm-8 best-plan`}
                     >
-                      <div className="best-plan-single1">
+                      
+                      <div className="best-plan-single1" key={res.id+1}>
                         <div
                           className="image"
                           style={{
@@ -105,7 +106,7 @@ export default function Category() {
                           }}
                         ></div>
 
-                        <div class="content">
+                        <div class="content" key={res.id+2}>
                           <p>{`From $ ${res.price}`}</p>
                           <h4>
                             <a href="/tour-package-details">{res.name}</a>
