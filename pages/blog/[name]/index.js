@@ -8,7 +8,7 @@ import axios from 'axios'
 import Instagram from '../../../Components/Instagram'
 import Footer from '../../../Components/Footer'
 
-function blog() {
+const blog = () => {
 
   const router = useRouter()
   const parse = require('html-react-parser')

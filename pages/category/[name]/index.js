@@ -10,7 +10,7 @@ import Link from 'next/link'
 import Navbar from '../../../Components/Navbar'
 import { useRouter } from 'next/router'
 
-function index() {
+const index = () => {
   const router = useRouter()
   let category = router.query.name
   const [packages, setPackages] = useState([])
