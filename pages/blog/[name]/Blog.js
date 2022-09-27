@@ -1,5 +1,6 @@
+/* eslint-disable no-use-before-define */
+
 import React, { useEffect, useState } from 'react'
-import Detail from '../../../Components/Detail'
 import Navbar from '../../../Components/Navbar'
 import Head from 'next/head'
 import Script from 'next/script'
