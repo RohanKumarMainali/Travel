@@ -93,6 +93,7 @@ function blog() {
                     <img
                       src={`http://localhost:8000/${blog.image}`}
                       alt="image"
+                      
                     />
                     
                   </div>

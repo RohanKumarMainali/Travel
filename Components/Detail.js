@@ -2,22 +2,20 @@ import React from 'react'
 
 const Detail = (props) => {
   const parse = require('html-react-parser')
-  var included = props?.singlePackage?.package_included.split(',');
-  var excluded = props?.singlePackage?.package_excluded.split(',');
-
-  console.log(included)
-  console.log(excluded)
+  var included = props?.singlePackage?.package_included.split(',')
+  var excluded = props?.singlePackage?.package_excluded.split(',')
+  let FAQs = props.FAQ
 
   return (
     <div className="container detailcont my-5  py-5">
       <div className="row">
         <div className="col-md-8">
-          <div id='overview' className="col-md-12 border mb-4 p-4">
+          <div id="overview" className="col-md-12 border mb-4 p-4">
             <h3 className="fw-bold">Overview</h3>
             <hr className="px-4" />
             <p>{parse(`${props?.singlePackage?.description}`)}</p>
           </div>
-          <div id='itinerary' className="border mb-4 p-4">
+          <div id="itinerary" className="border mb-4 p-4">
             <h3 className="fw-bolder">Your Itinerary</h3>
             <hr className="px-4" />
 
@@ -25,49 +23,29 @@ const Detail = (props) => {
               return (
                 <>
                   <div className="detail">
-                    <h5 className="text-secondary fw-bold">
-                      {element.title}
-                    </h5>
-                    <p>
-                      {element.description}
-                    </p>
+                    <h5 className="text-secondary fw-bold">{element.title}</h5>
+                    <p>{element.description}</p>
                   </div>
                 </>
               )
             })}
           </div>
-          <div id='trip-additional-info' className="border p-4">
-            <h3 className="fw-bold">Additional Info</h3>
-            <hr className="px-4" />
-            <div className="detail">
-              <h2 className="fw-bolder">Everest Base Camp Difficulty </h2>
-              <p>
-                Travel experts of Nepal have graded the difficulty of the
-                Everest Base Camp trek as “moderate”. This means you will need
-                very good fitness for walking 6 to 7 hours each day for about a
-                week. However, there’s no need for any mountain climbing skills
-                and gears to complete this trek. Basically, any person with good
-                physical and mental fitness can complete this trek with a few
-                months of preparation. Two to three months before the trek, you
-                need to engage in some cardio exercises such as running,
-                jogging, swimming, and cycling. It really helps to boost your
-                stamina before you head for the trek. It’s easier than the
-                Everest Three Pass Trek. The major Everest base camp trek
-                difficulty is distance and altitude. Everest Base Camp distance
-                is about 150 km and you will be covering this distance for 8
-                days. This means you will be walking 15 to 20 km each day. This
-                makes 6 to 7 hours of the daily walk which surely demands good
-                physical health. Along with distance, the altitude of Everest
-                base camp 5300 M, and that of Kala Pathar is also a big
-                challenge during the trek. Once you cross Namche Bazaar, you
-                start to feel the pressure of low oxygen level which makes your
-                climb harder. Covering 500 to 1000m each day and including a
-                rest day in Everest Base Camp Trek Itinerary helps you a lot.
-                However, this doesn’t mean you need oxygen for the Everest Base
-                Camp trek.
-              </p>
-            </div>
-          </div>
+
+          {props?.singlePackage?.additional_information ? (
+            <>
+              <div id="trip-additional-info" className="border p-4">
+                <h3 className="fw-bold">Additional Info</h3>
+                <hr className="px-4" />
+                <div className="detail">
+                  <p>
+                    {parse(`${props?.singlePackage?.additional_information}`)}
+                  </p>
+                </div>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
           <div className="border mt-5">
             <div className="container mt-5  display-flex include-exclue">
               <div className="row">
@@ -78,15 +56,19 @@ const Detail = (props) => {
                         <h2>What's included</h2>
                       </div>
                       <div class="includes">
-                        {included?.map(data =>{
-                          <ul>
-                          <li>
-                            <div class="bi bi-check-circle-fill mr-3"></div>
-                            {/* {data} */}
-                          </li>
-                        </ul>
+                        {included?.map((data) => {
+                          return (
+                            <div>
+                              <ul>
+                                <li>
+                                  <div class="bi bi-check-circle-fill mr-3"></div>
+                                  {data}
+                                  {console.log(data)}
+                                </li>
+                              </ul>
+                            </div>
+                          )
                         })}
-                        
                       </div>
                     </div>
                   </div>
@@ -96,69 +78,36 @@ const Detail = (props) => {
                     <div class="box__heading">
                       <h2>What's not included</h2>
                     </div>
-
-                    <div class="excludes">
-                      <ul>
-                        <li>
-                          <div class="bi bi-x-circle-fill"></div>Meals in
-                          Kathmandu before and after trekking
-                        </li>
-                  
-                      </ul>
-                    </div>
+                    {excluded?.map((data) => {
+                      return (
+                        <div class="excludes">
+                          <ul>
+                            <li>
+                              <div class="bi bi-x-circle-fill"></div>
+                              {data}
+                            </li>
+                          </ul>
+                        </div>
+                      )
+                    })}
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           {/* FAQ */}
           <div className="border mt-5 mb-4 p-4">
             <h3 className="fw-bolder">FAQ</h3>
             <hr className="px-4" />
-            <div className="detail">
-              <h5 className=" fw-bold">
-                Is there internet on the Everest Base Camp trek?
-              </h5>
-              <p>
-                Trek adventure begins with your arrival in Kathmandu City, the
-                capital of Nepal. Upon your arrival, we’ll meet you at the
-                Arrivals gate at Tribhuvan International Airport. A
-                representative from My Everest Trip staff will meet you at the
-                airport and help you with your luggage. Enjoy a brief tour of
-                the bustling Kathmandu.
-              </p>
-            </div>
-            <div className="detail">
-              <h5 className="fw-bold">
-                Is Everest Base Camp Trek Solo trip possible?
-              </h5>
-              <p>
-                Trek adventure begins with your arrival in Kathmandu City, the
-                capital of Nepal. Upon your arrival, we’ll meet you at the
-                Arrivals gate at Tribhuvan International Airport. A
-                representative from My Everest Trip staff will meet you at the
-                airport and help you with your luggage. Enjoy a brief tour of
-                the bustling Kathmandu city as you make your way to the hotel.
-                You will check .
-              </p>
-            </div>
-            <div className="detail">
-              <h5 className="fw-bold">
-                Do I need a Guide for the Everest Base Camp trek?
-              </h5>
-              <p>
-                Legally you don’t. There are some restricted trekking regions in
-                Nepal where hiring a guide is compulsory. However, Everest is
-                not one of them. So you don’t compulsorily need a guide for
-                Everest. However, this is a remote unknown land where you might
-                face many challenges. The locals and hotel owners don’t
-                understand English and you cannot find the hotels on the
-                internet. Also, you are unknown to the Everest Base Camp trek
-                amp between the forest. The unique culture of the mountains
-                might also be hard to understand. That is why hiring a guide is
-                always the best solution.
-              </p>
-            </div>
+            {FAQs?.map((FAQ) => {
+              return (
+                <div className="detail">
+                  <h5 className=" fw-bold">{FAQ.question}</h5>
+                  <p>{FAQ.answer}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
 

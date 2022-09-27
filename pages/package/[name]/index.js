@@ -11,6 +11,7 @@ function packageDetails() {
   let packageName = router.query.name
   const [singlePackage, setPackage] = useState()
   const [packageDays,setPackageDays] = useState()
+  const [packageFAQ,setPackageFAQ] = useState();
 
   const getPackage = async () => {
     const response = await axios.get(
@@ -22,7 +23,11 @@ function packageDetails() {
         `http://127.0.0.1:8000/day-details/${response.data[0].id}`,
       )
       setPackageDays(daysResponse.data)
-      console.log(daysResponse)
+
+      const FAQresponse = await axios.get(
+        `http://127.0.0.1:8000/FAQ/${response.data[0].id}`,
+      )
+      setPackageFAQ(FAQresponse.data)
     }
   }
 
@@ -130,6 +135,7 @@ function packageDetails() {
       <Detail 
         singlePackage = {singlePackage}
         packageDays = {packageDays}
+        FAQ = {packageFAQ}
       />
       <Footer></Footer>
     </>
