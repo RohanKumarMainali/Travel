@@ -6,7 +6,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import Footer from '../../../Components/Footer'
 import axios from 'axios'
-const packageDetails = () => {
+export default function  packageDetails ()  {
   const router = useRouter()
   let packageName = router.query.name
   const [singlePackage, setPackage] = useState()
@@ -142,4 +142,3 @@ const packageDetails = () => {
   )
 }
 
-export default packageDetails

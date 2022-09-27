@@ -8,7 +8,7 @@ import axios from 'axios'
 import Instagram from '../../../Components/Instagram'
 import Footer from '../../../Components/Footer'
 
-const blog = () => {
+export default function Blog () {
 
   const router = useRouter()
   const parse = require('html-react-parser')
@@ -256,4 +256,3 @@ const blog = () => {
   )
 }
 
-export default blog

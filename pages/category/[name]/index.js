@@ -10,7 +10,7 @@ import Link from 'next/link'
 import Navbar from '../../../Components/Navbar'
 import { useRouter } from 'next/router'
 
-const index = () => {
+export default function Category () {
   const router = useRouter()
   let category = router.query.name
   const [packages, setPackages] = useState([])
@@ -145,4 +145,3 @@ const index = () => {
   )
 }
 
-export default index
