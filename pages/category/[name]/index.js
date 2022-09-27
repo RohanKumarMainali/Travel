@@ -91,7 +91,7 @@ export default function Category() {
                 return (
                   <>
                     <div
-                      key={res.category}
+                      key={res.id}
                       className={`col-md-4 col-sm-8 best-plan`}
                     >
                       <div className="best-plan-single1">
