@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 
 import React from 'react'
 import Head from 'next/head'
@@ -123,8 +122,8 @@ export default function Category() {
                           <div class="list-area">
                             <h5>Free Package Facility:</h5>
                             <ul class="plan-list1">
-                              {includedArray.map((element) => {
-                                return <li>{element}</li>
+                              {includedArray.map((element,index) => {
+                                return <li key={index}>{element}</li>
                               })}
                             </ul>
                           </div>
