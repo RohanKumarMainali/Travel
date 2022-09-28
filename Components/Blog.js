@@ -35,7 +35,7 @@ function Blog() {
                       class="image"
                       style={{
                         backgroundImage:
-                          `url(http://127.0.0.1:8000/${blog.image})`,
+                          `url(http://127.0.0.1:8000${blog.image})`,
                         height: '30vh',
                         backgroundSize: 'cover',
                         backgroundPosition: ' center center',

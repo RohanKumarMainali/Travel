@@ -93,7 +93,7 @@ export default function Blog () {
                 <div className="blog">
                   <div class="blog-details-single">
                     <img
-                      src={`http://localhost:8000/${blog.image}`}
+                      src={`http://localhost:8000${blog.image}`}
                       alt="image"
                       
                     />

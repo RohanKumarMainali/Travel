@@ -98,7 +98,7 @@ export default function Category() {
                         <div
                           className="image"
                           style={{
-                            backgroundImage: `url(http://127.0.0.1:8000/${res.image})`,
+                            backgroundImage: `url(http://127.0.0.1:8000${res.image})`,
                             height: '30vh',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',

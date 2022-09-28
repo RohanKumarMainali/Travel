@@ -10,12 +10,12 @@ function Footer() {
               <div class="col-lg-3 col-md-10 col-sm-6 col-11 order-sm-0 order-1">
                 <div class="footer-about">
                   <img
-                    src="image/footer-plane.svg"
+                    src="/image/footer-plane.svg"
                     class="footer-plane"
                     alt="image"
                   />
                   <div class="footer1-logo">
-                    <img src="image/footer1-logo.svg" alt="image" />
+                    <img src="/image/footer1-logo.svg" alt="image" />
                     <p>Since: 2022</p>
                   </div>
                   <svg
@@ -154,16 +154,16 @@ function Footer() {
                 <h4>Pay Safely With Us!</h4>
                 <ul class="pay-list">
                   <li>
-                    <img src="image/pay1.svg" alt="image" />
+                    <img src="/image/pay1.svg" alt="image" />
                   </li>
                   <li>
-                    <img src="image/pay2.svg" alt="image" />
+                    <img src="/image/pay2.svg" alt="image" />
                   </li>
                   <li>
-                    <img src="image/pay3.svg" alt="image" />
+                    <img src="/image/pay3.svg" alt="image" />
                   </li>
                   <li>
-                    <img src="image/pay4.svg" alt="image" />
+                    <img src="/image/pay4.svg" alt="image" />
                   </li>
                 </ul>
               </div>

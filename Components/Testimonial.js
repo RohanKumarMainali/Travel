@@ -58,7 +58,7 @@ const Testimonial = () => {
                         </div>
                         <div className="testi-author1">
                           <div className="image">
-                            <img src={`http://127.0.0.1:8000/${testimonial.image}`} 
+                            <img src={`http://127.0.0.1:8000${testimonial.image}`} 
                                 style={{height: '80px', borderRadius:'50%',width:'80px'}}
                             alt="image" />
                           </div>

@@ -42,7 +42,7 @@ function BestPlans() {
                       <div
                         className="image"
                         style={{
-                          backgroundImage: `url(http://127.0.0.1:8000/${singlePackage.image})`,
+                          backgroundImage: `url(http://127.0.0.1:8000${singlePackage.image})`,
                           height: '30vh',
                           backgroundSize: 'cover',
                           backgroundPosition: 'center',

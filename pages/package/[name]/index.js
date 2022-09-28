@@ -67,7 +67,7 @@ export default function  PackageDetails ()  {
         <div
           className="new"
           style={{
-            backgroundImage: `url('http://127.0.0.1:8000/${singlePackage?.image}') `,
+            backgroundImage: `url('http://127.0.0.1:8000${singlePackage?.image}') `,
             minHeight: '500px',
             position: 'relative',
           
