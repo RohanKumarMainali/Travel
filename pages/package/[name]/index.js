@@ -12,6 +12,8 @@ export default function  PackageDetails ()  {
   const [singlePackage, setPackage] = useState()
   const [packageDays,setPackageDays] = useState()
   const [packageFAQ,setPackageFAQ] = useState();
+  const [semiNav,setSemiNav] = useState("detailnav")
+
 
   const getPackage = async () => {
     const response = await axios.get(
@@ -34,6 +36,19 @@ export default function  PackageDetails ()  {
   useEffect(() => {
     getPackage();
   }, [packageName])
+
+  useEffect(() => {
+    const options = { passive: true }; // options must match add/remove event
+    const scroll = (event) => {
+      const { pageYOffset, scrollY } = window;
+      console.log("yOffset", pageYOffset, "scrollY", scrollY);
+      if(pageYOffset>=500) setSemiNav('semiNavTop')
+      else setSemiNav('')
+    };
+    document.addEventListener("scroll", scroll, options);
+    // remove event on unmount to prevent a memory leak
+    () => document.removeEventListener("scroll", scroll, options);
+  }, []);
 
   return (
     <>
@@ -73,7 +88,8 @@ export default function  PackageDetails ()  {
           
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            zIndex: '-1',
 
           }}
         >
@@ -99,9 +115,9 @@ export default function  PackageDetails ()  {
           </div>
           <div className="quick-contact"></div>
         </div>
-        <nav class="container detailnav scrollspy mt-4">
+        <nav class={`container semiNavFixed scrollspy mt-4`}>
           <div className="row">
-            <div className="col-md-8 shadow">
+            <div className={`col-md-8 shadow ${semiNav}`}>
               <ul className="m-0 p-0 d-flex flex-wrap justifly-content-center align-items-center">
                 <li class="">
                   <a href="#overview">Overview</a>
@@ -110,23 +126,15 @@ export default function  PackageDetails ()  {
                   <a href="#itinerary">Your Itinerary</a>
                 </li>
                 <li class="">
-                  <a href="#trip-additional-info">Additional Info</a>
+                  <a href="#info">Additional Info</a>
                 </li>
                 <li class="">
-                  <a href="#why-us">Why US</a>
+                  <a href="#faq">FAQ</a>
                 </li>
                 <li class="">
-                  <a href="#trip-faq">FAQ</a>
+                  <a href="#included">What To Expect</a>
                 </li>
-                <li class="">
-                  <a href="#trip-map">Map</a>
-                </li>{' '}
-                <li class="">
-                  <a href="#includes">What To Expect</a>
-                </li>
-                <li class="">
-                  <a href="#fixed-dates">Cost &amp; Dates</a>
-                </li>
+         
               </ul>
             </div>
           </div>

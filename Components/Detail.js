@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useCallback,useEffect,useState} from 'react'
 import Faq from "react-faq-component";
 
 const Detail = (props) => {
+
+  const [scrollY, setScrollY] = useState(0);
   const parse = require('html-react-parser')
   var included = props?.singlePackage?.package_included.split(',')
   var excluded = props?.singlePackage?.package_excluded.split(',')
@@ -26,14 +28,13 @@ const Detail = (props) => {
 
 const config = {
     animate: true,
-    tabFocus: true,
 };
 
   return (
-    <div className="container detailcont my-5  py-5">
+    <div className="container detailcont my-5  py-5" id="overview">
       <div className="row">
         <div className="col-md-8">
-          <div id="overview" className="col-md-12 border mb-4 p-4">
+          <div  className="col-md-12 border mb-4 p-4">
             <h3 className="fw-bold">Overview</h3>
             <hr className="px-4" />
             <p>{parse(`${props?.singlePackage?.description}`)}</p>
@@ -55,8 +56,8 @@ const config = {
           </div>
 
           {props?.singlePackage?.additional_information ? (
-            <>
-              <div id="trip-additional-info" className="border p-4">
+            <div id="info">
+              <div  className="border p-4" >
                 <h3 className="fw-bold">Additional Info</h3>
                 <hr className="px-4" />
                 <div className="detail">
@@ -65,11 +66,11 @@ const config = {
                   </p>
                 </div>
               </div>
-            </>
+            </div>
           ) : (
             <></>
           )}
-          <div className="border mt-5">
+          <div className="border mt-5" id='included'>
             <div className="container mt-5  display-flex include-exclue">
               <div className="row">
                 <div className="col-md-6">
@@ -96,7 +97,7 @@ const config = {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6" id='#includes'>
                   <div class="box__item">
                     <div class="box__heading">
                       <h2>What's not included</h2>
@@ -120,7 +121,7 @@ const config = {
           </div>
 
           {/* FAQ */}
-          <div className="border mt-5 mb-4 p-4">
+          <div className="border mt-5 mb-4 p-4" id='faq'>
             <h3 className="fw-bolder">FAQ</h3>
             <hr className="px-4" />
             <Faq
